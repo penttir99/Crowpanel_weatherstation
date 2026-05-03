@@ -1,4 +1,7 @@
+Crowpanel Repo
+ https://github.com/Elecrow-RD/CrowPanel-Advanced-7inch-ESP32-P4-HMI-AI-Display-1024x600-IPS-Touch-Screen
 
+Amazon.de link
 https://www.amazon.de/-/en/dp/B0G34ZXVZ6?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
 
 # CrowPanel Advanced 7" Weather Station — LVGL / ESP-IDF
