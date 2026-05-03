@@ -1,0 +1,55 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4ff00f5e: [0;33mpanic_abort[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x4ff0997e: [0;33m__ubsan_include[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x4ff00003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x400089ae: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/uart_ll.h[0m[0m:[1;31m743[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m190[0m
+[0m--- 0x4ff04b7e: [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m50[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m--- 0x4ff04b44: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x4ff04ca0: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m57[0m
+[0m

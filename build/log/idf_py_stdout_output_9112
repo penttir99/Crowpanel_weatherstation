@@ -1,0 +1,325 @@
+ESP-ROM:esp32p4-eco2-20240710
+BESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x31f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (25) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v1.3[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (32) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=400e0020 size=70888h (460936) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=000808b0 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00080920 vaddr=4ff00000 size=0f6f8h ( 63224) load[0m
+[0;32mI (182) esp_image: segment 3: paddr=00090020 vaddr=40000020 size=d29ech (862700) map[0m
+[0;32mI (327) esp_image: segment 4: paddr=00162a14 vaddr=4ff0f6f8 size=04538h ( 17720) load[0m
+[0;32mI (332) esp_image: segment 5: paddr=00166f54 vaddr=4ff13c80 size=03750h ( 14160) load[0m
+[0;32mI (336) esp_image: segment 6: paddr=0016a6ac vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (343) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (344) boot: Disabling RNG early entropy source...[0m
+[0;32mI (362) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (362) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (363) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (363) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (368) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (372) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (377) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (381) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (385) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (390) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (394) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (399) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (404) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (581) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (581) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (581) esp_psram: Speed: 200MHz[0m
+[0;32mI (582) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (585) cpu_start: Multicore app[0m
+[0;32mI (1538) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1548) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1548) cpu_start: Pro cpu start user code[0m
+[0;32mI (1548) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1550) app_init: Application information:[0m
+[0;32mI (1554) app_init: Project name:     Lesson07[0m
+[0;32mI (1558) app_init: App version:      1[0m
+[0;32mI (1562) app_init: Compile time:     Apr 27 2026 22:54:15[0m
+[0;32mI (1567) app_init: ELF file SHA256:  49b88a083...[0m
+[0;32mI (1571) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1575) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1579) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1583) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1587) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1594) heap_init: At 4FF24950 len 00016670 (89 KiB): RETENT_RAM[0m
+[0;32mI (1599) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1604) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1610) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1615) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1621) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1628) spi_flash: detected chip: generic[0m
+[0;32mI (1631) spi_flash: flash io: dio[0m
+[0;32mI (1634) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1638) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1647) H_API: ** add_esp_wifi_remote_channels **[0m
+[1;31mE (1652) HS_MP: mempool create failed: no mem[0m
+
+[0;33mW (1655) H_SDIO_DRV: mempool create failed, using direct alloc[0m
+[0;32mI (1661) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1669) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1678) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1687) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1693) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1699) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1699) main_task: Started on CPU0[0m
+[0;32mI (1709) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1719) main_task: Calling app_main()[0m
+[0;32mI (1719) SAASEMA: === Saaasema ESP32-P4 kaynnistyy ===[0m
+[0;32mI (1719) gpio: GPIO[31]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1729) ek79007: version: 1.0.4[0m
+[0;32mI (1889) LVGL: Starting LVGL task[0m
+[1;31mE (1889) lcd_panel: esp_lcd_panel_swap_xy(50): swap_xy is not supported by this panel[0m
+[0;32mI (1889) SAASEMA: LCD alustettu[0m
+[0;32mI (1889) SAASEMA: Taustavalo paalla[0m
+[0;32mI (1899) gpio: GPIO[40]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1899) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1929) gpio: GPIO[42]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (1929) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1929) GT911: TouchPad_Config_Version:255[0m
+[0;32mI (1929) SAASEMA: Kosketusnaytto alustettu[0m
+[0;32mI (1929) SAASEMA: Odotetaan ESP-Hosted alustusta...[0m
+[0;32mI (4939) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (4939) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (4939) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (4939) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (6469) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (6469) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (6469) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (6499) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6499) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (6499) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (6599) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (6599) transport: set_transport_state: 1[0m
+[0;32mI (6599) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (6699) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (6699) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (6699) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (6699) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[1;31mE (6699) H_SDIO_DRV: Failed to push data to rx queue[0m
+[1;31mE (6699) H_SDIO_DRV: task still writing Rx data to queue![0m
+[0;32mI (6729) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[0;32mI (6729) transport: Received INIT event from ESP32 peripheral[0m
+[0;32mI (6729) transport: EVENT: 12[0m
+[0;32mI (6729) transport: Identified slave [esp32c6][0m
+[0;32mI (6729) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (6739) transport: EVENT: 11[0m
+[0;32mI (6739) transport: capabilities: 0xd[0m
+[0;32mI (6739) transport: Features supported are:[0m
+[0;32mI (6749) transport: 	 * WLAN[0m
+[0;32mI (6749) transport: 	   - HCI over SDIO[0m
+[0;32mI (6749) transport: 	   - BLE only[0m
+[0;32mI (6759) transport: EVENT: 13[0m
+[0;32mI (6759) transport: ESP board type is : 13 [0m
+
+[0;32mI (6759) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (6769) H_API: Transport active[0m
+[0;32mI (6769) transport: Slave chip Id[12][0m
+[0;32mI (6779) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (6779) transport: transport_delayed_init[0m
+[0;32mI (6789) esp_cli: Registering command: crash[0m
+[0;32mI (6789) esp_cli: Registering command: reboot[0m
+[0;32mI (6789) esp_cli: Registering command: mem-dump[0m
+[0;32mI (6799) esp_cli: Registering command: task-dump[0m
+[0;32mI (6799) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (6809) esp_cli: Registering command: heap-trace[0m
+[0;32mI (6809) esp_cli: Registering command: sock-dump[0m
+[0;32mI (6809) esp_cli: Registering command: host-power-save[0m
+[0;32mI (6819) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (6819) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (6829) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (6829) H_SDIO_DRV: Write thread started[0m
+[0;32mI (7699) RPC_WRAP: Coprocessor Boot-up[0m
+[0;32mI (7799) SAASEMA: Odotetaan WiFi-yhteytta...[0m
+[0;32mI (7809) RPC_WRAP: ESP Event: wifi station started[0m
+[0;32mI (7829) H_API: esp_wifi_remote_connect[0m
+[0;32mI (7859) RPC_WRAP: ESP Event: Station mode: Connected[0m
+[0;32mI (7859) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x400938e8[0m
+[0;32mI (10059) esp_netif_handlers: sta ip: 192.168.100.68, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (10059) SAASEMA: WiFi yhdistetty, IP: 192.168.100.68[0m
+[0;32mI (10059) SAASEMA: WiFi OK[0m
+[0;32mI (11559) SAASEMA: Aika synkronoitu[0m
+[0;32mI (11569) SAASEMA: UI rakennettu[0m
+[0;32mI (11659) SAASEMA: Kaikki alustettu![0m
+[0;32mI (11659) main_task: Returned from app_main()[0m
+[0;32mI (13659) SAASEMA: Haetaan saadataa...[0m
+[0;32mI (13699) WEATHER: DNS OK[0m
+[0;32mI (13929) WEATHER: Saadata haettu: 2.0°C clear sky[0m
+[0;32mI (14139) WEATHER: Ennuste haettu (6 kohtaa)[0m
+[0;32mI (14139) SAASEMA: UI paivitetty[0m
+[0;32mI (16489) DISPLAY: X=187 Y=458 strenth=11 cnt=1[0m
+[0;32mI (16519) DISPLAY: X=187 Y=458 strenth=11 cnt=1[0m
+[0;32mI (16549) DISPLAY: X=187 Y=458 strenth=11 cnt=1[0m
+[0;32mI (16579) DISPLAY: X=187 Y=458 strenth=11 cnt=1[0m
+[0;32mI (16609) DISPLAY: X=187 Y=458 strenth=11 cnt=1[0m
+[0;32mI (16639) DISPLAY: X=187 Y=458 strenth=11 cnt=1[0m
+[0;32mI (16669) DISPLAY: X=187 Y=458 strenth=11 cnt=1[0m
+[0;32mI (16699) DISPLAY: X=187 Y=458 strenth=11 cnt=1[0m
+[0;32mI (16729) DISPLAY: X=201 Y=464 strenth=11 cnt=1[0m
+[0;32mI (16759) DISPLAY: X=212 Y=474 strenth=11 cnt=1[0m
+[0;32mI (16789) DISPLAY: X=212 Y=476 strenth=11 cnt=1[0m
+[0;32mI (16819) DISPLAY: X=213 Y=477 strenth=11 cnt=1[0m
+[0;32mI (16849) DISPLAY: X=213 Y=478 strenth=11 cnt=1[0m
+[0;32mI (16879) DISPLAY: X=213 Y=478 strenth=11 cnt=1[0m
+[0;32mI (16909) DISPLAY: X=213 Y=478 strenth=11 cnt=1[0m
+[0;32mI (16939) DISPLAY: X=213 Y=478 strenth=11 cnt=1[0m
+[0;32mI (16969) DISPLAY: X=213 Y=478 strenth=11 cnt=1[0m
+[0;32mI (16999) DISPLAY: X=213 Y=478 strenth=11 cnt=1[0m
+[0;32mI (17029) DISPLAY: X=213 Y=478 strenth=11 cnt=1[0m
+[0;32mI (36019) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36049) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36079) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36109) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36139) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36169) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36199) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36229) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36259) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36289) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36319) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36349) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36379) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36409) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36439) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36469) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36499) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36529) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36559) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36589) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36619) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36649) DISPLAY: X=84 Y=280 strenth=7 cnt=1[0m
+[0;32mI (36679) DISPLAY: X=84 Y=281 strenth=7 cnt=1[0m
+[0;32mI (36709) DISPLAY: X=107 Y=294 strenth=7 cnt=1[0m
+[0;32mI (36739) DISPLAY: X=116 Y=298 strenth=7 cnt=1[0m
+[0;32mI (36769) DISPLAY: X=119 Y=301 strenth=7 cnt=1[0m
+[0;32mI (36799) DISPLAY: X=123 Y=302 strenth=7 cnt=1[0m
+[0;32mI (36829) DISPLAY: X=129 Y=302 strenth=7 cnt=1[0m
+[0;32mI (36859) DISPLAY: X=132 Y=302 strenth=7 cnt=1[0m
+[0;32mI (36889) DISPLAY: X=134 Y=303 strenth=7 cnt=1[0m
+[0;32mI (36919) DISPLAY: X=138 Y=303 strenth=7 cnt=1[0m
+[0;32mI (37369) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37399) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37429) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37459) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37489) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37519) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37549) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37579) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37609) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37639) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37669) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37699) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37729) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37759) DISPLAY: X=106 Y=277 strenth=8 cnt=1[0m
+[0;32mI (37789) DISPLAY: X=119 Y=286 strenth=8 cnt=1[0m
+[0;32mI (37819) DISPLAY: X=133 Y=291 strenth=8 cnt=1[0m
+[0;32mI (37849) DISPLAY: X=134 Y=292 strenth=8 cnt=1[0m
+[0;32mI (37879) DISPLAY: X=136 Y=291 strenth=8 cnt=1[0m
+[0;32mI (37909) DISPLAY: X=140 Y=290 strenth=8 cnt=1[0m
+[0;32mI (37939) DISPLAY: X=144 Y=289 strenth=8 cnt=1[0m
+[0;32mI (37969) DISPLAY: X=148 Y=289 strenth=8 cnt=1[0m
+[0;32mI (37999) DISPLAY: X=150 Y=289 strenth=8 cnt=1[0m
+[0;32mI (38029) DISPLAY: X=154 Y=289 strenth=8 cnt=1[0m
+[0;32mI (38059) DISPLAY: X=159 Y=289 strenth=8 cnt=1[0m
+[0;32mI (38089) DISPLAY: X=163 Y=289 strenth=8 cnt=1[0m
+[0;32mI (38119) DISPLAY: X=166 Y=290 strenth=8 cnt=1[0m
+[0;32mI (38149) DISPLAY: X=168 Y=291 strenth=8 cnt=1[0m
+[0;32mI (38179) DISPLAY: X=171 Y=293 strenth=8 cnt=1[0m
+[0;32mI (38209) DISPLAY: X=174 Y=294 strenth=8 cnt=1[0m
+[0;32mI (38239) DISPLAY: X=174 Y=295 strenth=8 cnt=1[0m
+[0;32mI (38269) DISPLAY: X=175 Y=295 strenth=8 cnt=1[0m
+[0;32mI (39409) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39439) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39469) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39499) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39529) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39559) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39589) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39619) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39649) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39679) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39709) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39739) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39769) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39799) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39829) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39859) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39889) DISPLAY: X=235 Y=330 strenth=6 cnt=1[0m
+[0;32mI (39919) DISPLAY: X=236 Y=327 strenth=6 cnt=1[0m
+[0;32mI (39949) DISPLAY: X=246 Y=323 strenth=6 cnt=1[0m
+[0;32mI (39979) DISPLAY: X=248 Y=323 strenth=6 cnt=1[0m
+[0;32mI (40849) DISPLAY: X=215 Y=270 strenth=5 cnt=1[0m
+[0;32mI (40879) DISPLAY: X=215 Y=270 strenth=5 cnt=1[0m
+[0;32mI (45139) DISPLAY: X=70 Y=273 strenth=10 cnt=1[0m
+[0;32mI (45169) DISPLAY: X=70 Y=273 strenth=10 cnt=1[0m
+[0;32mI (45199) DISPLAY: X=70 Y=273 strenth=10 cnt=1[0m
+[0;32mI (45229) DISPLAY: X=70 Y=273 strenth=10 cnt=1[0m
+[0;32mI (45259) DISPLAY: X=70 Y=273 strenth=10 cnt=1[0m
+[0;32mI (45289) DISPLAY: X=70 Y=273 strenth=10 cnt=1[0m
+[0;32mI (45319) DISPLAY: X=70 Y=273 strenth=10 cnt=1[0m
+[0;32mI (45349) DISPLAY: X=70 Y=273 strenth=10 cnt=1[0m
+[0;32mI (45379) DISPLAY: X=70 Y=273 strenth=10 cnt=1[0m
+[0;32mI (45409) DISPLAY: X=83 Y=279 strenth=10 cnt=1[0m
+[0;32mI (45439) DISPLAY: X=95 Y=290 strenth=10 cnt=1[0m
+[0;32mI (45469) DISPLAY: X=104 Y=294 strenth=10 cnt=1[0m
+[0;32mI (45499) DISPLAY: X=105 Y=294 strenth=10 cnt=1[0m
+[0;32mI (45529) DISPLAY: X=113 Y=294 strenth=10 cnt=1[0m
+[0;32mI (45559) DISPLAY: X=120 Y=294 strenth=10 cnt=1[0m
+[0;32mI (45589) DISPLAY: X=126 Y=294 strenth=10 cnt=1[0m
+[0;32mI (45619) DISPLAY: X=132 Y=293 strenth=10 cnt=1[0m
+[0;32mI (45649) DISPLAY: X=138 Y=292 strenth=10 cnt=1[0m
+[0;32mI (45679) DISPLAY: X=144 Y=293 strenth=10 cnt=1[0m
+[0;32mI (45709) DISPLAY: X=152 Y=293 strenth=10 cnt=1[0m
+[0;32mI (45739) DISPLAY: X=160 Y=294 strenth=10 cnt=1[0m
+[0;32mI (45769) DISPLAY: X=164 Y=294 strenth=10 cnt=1[0m
+[0;32mI (45799) DISPLAY: X=169 Y=293 strenth=10 cnt=1[0m
+[0;32mI (45829) DISPLAY: X=171 Y=293 strenth=10 cnt=1[0m
+[0;32mI (45859) DISPLAY: X=173 Y=293 strenth=10 cnt=1[0m
+[0;32mI (45889) DISPLAY: X=177 Y=294 strenth=10 cnt=1[0m
+[0;32mI (45919) DISPLAY: X=185 Y=294 strenth=10 cnt=1[0m
+[0;32mI (45949) DISPLAY: X=193 Y=289 strenth=10 cnt=1[0m
+[0;32mI (45979) DISPLAY: X=201 Y=281 strenth=10 cnt=1[0m
+[0;32mI (46009) DISPLAY: X=207 Y=279 strenth=10 cnt=1[0m
+[0;32mI (46039) DISPLAY: X=215 Y=282 strenth=10 cnt=1[0m
+[0;32mI (46069) DISPLAY: X=224 Y=293 strenth=10 cnt=1[0m
+[0;32mI (46099) DISPLAY: X=233 Y=306 strenth=10 cnt=1[0m
+[0;32mI (46129) DISPLAY: X=241 Y=312 strenth=10 cnt=1[0m
+[0;32mI (46159) DISPLAY: X=249 Y=314 strenth=10 cnt=1[0m
+[0;32mI (46189) DISPLAY: X=258 Y=314 strenth=10 cnt=1[0m
+[0;32mI (46219) DISPLAY: X=264 Y=317 strenth=10 cnt=1[0m
+[0;32mI (46249) DISPLAY: X=268 Y=319 strenth=10 cnt=1[0m
+[0;32mI (46279) DISPLAY: X=273 Y=320 strenth=10 cnt=1[0m
+[0;32mI (47149) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47179) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47209) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47239) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47269) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47299) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47329) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47359) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47389) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47419) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47449) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47479) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m
+[0;32mI (47509) DISPLAY: X=209 Y=382 strenth=16 cnt=1[0m

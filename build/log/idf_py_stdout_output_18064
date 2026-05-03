@@ -1,0 +1,275 @@
+ESP-ROM:esp32p4-eco2-20240710
+BESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x31f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (25) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v1.3[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (32) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 001f0000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=400e0020 size=842f8h (541432) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=00094320 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00094390 vaddr=4ff00000 size=0bc88h ( 48264) load[0m
+[0;32mI (193) esp_image: segment 3: paddr=000a0020 vaddr=40000020 size=dbb68h (899944) map[0m
+[0;32mI (343) esp_image: segment 4: paddr=0017bb90 vaddr=4ff0bc88 size=07fa8h ( 32680) load[0m
+[0;32mI (351) esp_image: segment 5: paddr=00183b40 vaddr=4ff13c80 size=03750h ( 14160) load[0m
+[0;32mI (356) esp_image: segment 6: paddr=00187298 vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (361) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (362) boot: Disabling RNG early entropy source...[0m
+[0;32mI (379) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (379) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (380) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (380) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (385) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (390) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (394) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (398) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (403) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (407) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (412) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (417) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (421) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (598) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (598) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (599) esp_psram: Speed: 200MHz[0m
+[0;32mI (599) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (603) cpu_start: Multicore app[0m
+[0;32mI (1555) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1565) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1565) cpu_start: Pro cpu start user code[0m
+[0;32mI (1565) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1567) app_init: Application information:[0m
+[0;32mI (1571) app_init: Project name:     Lesson07[0m
+[0;32mI (1575) app_init: App version:      1[0m
+[0;32mI (1579) app_init: Compile time:     Apr 27 2026 22:54:15[0m
+[0;32mI (1584) app_init: ELF file SHA256:  b061b4e1e...[0m
+[0;32mI (1588) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1592) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1596) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1600) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1604) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1611) heap_init: At 4FF249D0 len 000165F0 (89 KiB): RETENT_RAM[0m
+[0;32mI (1616) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1622) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1627) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1632) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1638) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1645) spi_flash: detected chip: generic[0m
+[0;32mI (1648) spi_flash: flash io: dio[0m
+[0;32mI (1651) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1656) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1664) H_API: ** add_esp_wifi_remote_channels **[0m
+[1;31mE (1669) HS_MP: mempool create failed: no mem[0m
+
+[0;33mW (1672) H_SDIO_DRV: mempool create failed, using direct alloc[0m
+[0;32mI (1678) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1687) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1695) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1704) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1710) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1717) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1717) main_task: Started on CPU0[0m
+[0;32mI (1727) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1737) main_task: Calling app_main()[0m
+[0;32mI (1737) SAASEMA: === Saaasema ESP32-P4 kaynnistyy ===[0m
+[0;32mI (1737) gpio: GPIO[31]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1747) ek79007: version: 1.0.4[0m
+[0;32mI (1907) LVGL: Starting LVGL task[0m
+[1;31mE (1907) lcd_panel: esp_lcd_panel_swap_xy(50): swap_xy is not supported by this panel[0m
+[0;32mI (1907) SAASEMA: LCD alustettu[0m
+[0;32mI (1907) SAASEMA: Taustavalo paalla[0m
+[0;32mI (1917) gpio: GPIO[40]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1917) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1947) gpio: GPIO[42]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (1947) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1947) GT911: TouchPad_Config_Version:255[0m
+[0;32mI (1947) SAASEMA: Kosketusnaytto alustettu[0m
+[0;32mI (1947) SAASEMA: LVGL touch indev rekisteroity[0m
+[0;32mI (1957) SAASEMA: Odotetaan ESP-Hosted alustusta...[0m
+[0;32mI (4957) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (4957) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (4957) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (4957) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (6487) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (6487) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (6487) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (6517) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6517) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (6517) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (6617) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (6617) transport: set_transport_state: 1[0m
+[0;32mI (6617) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (6717) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (6717) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (6717) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (6717) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[1;31mE (6717) H_SDIO_DRV: Failed to push data to rx queue[0m
+[1;31mE (6717) H_SDIO_DRV: task still writing Rx data to queue![0m
+[0;32mI (6747) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[0;32mI (6747) transport: Received INIT event from ESP32 peripheral[0m
+[0;32mI (6747) transport: EVENT: 12[0m
+[0;32mI (6747) transport: Identified slave [esp32c6][0m
+[0;32mI (6747) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (6757) transport: EVENT: 11[0m
+[0;32mI (6757) transport: capabilities: 0xd[0m
+[0;32mI (6757) transport: Features supported are:[0m
+[0;32mI (6767) transport: 	 * WLAN[0m
+[0;32mI (6767) transport: 	   - HCI over SDIO[0m
+[0;32mI (6767) transport: 	   - BLE only[0m
+[0;32mI (6777) transport: EVENT: 13[0m
+[0;32mI (6777) transport: ESP board type is : 13 [0m
+
+[0;32mI (6777) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (6787) H_API: Transport active[0m
+[0;32mI (6787) transport: Slave chip Id[12][0m
+[0;32mI (6797) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (6797) transport: transport_delayed_init[0m
+[0;32mI (6807) esp_cli: Registering command: crash[0m
+[0;32mI (6807) esp_cli: Registering command: reboot[0m
+[0;32mI (6807) esp_cli: Registering command: mem-dump[0m
+[0;32mI (6817) esp_cli: Registering command: task-dump[0m
+[0;32mI (6817) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (6827) esp_cli: Registering command: heap-trace[0m
+[0;32mI (6827) esp_cli: Registering command: sock-dump[0m
+[0;32mI (6827) esp_cli: Registering command: host-power-save[0m
+[0;32mI (6837) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (6837) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (6847) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (6847) H_SDIO_DRV: Write thread started[0m
+[0;32mI (7717) RPC_WRAP: Coprocessor Boot-up[0m
+[0;32mI (7817) SAASEMA: Odotetaan WiFi-yhteytta...[0m
+[0;32mI (7827) RPC_WRAP: ESP Event: wifi station started[0m
+[0;32mI (7847) H_API: esp_wifi_remote_connect[0m
+[0;32mI (7877) RPC_WRAP: ESP Event: Station mode: Connected[0m
+[0;32mI (7877) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x4009b178[0m
+[0;32mI (10027) esp_netif_handlers: sta ip: 192.168.100.68, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (10027) SAASEMA: WiFi yhdistetty, IP: 192.168.100.68[0m
+[0;32mI (10027) SAASEMA: WiFi OK[0m
+[0;32mI (11527) SAASEMA: Aika synkronoitu[0m
+[0;32mI (11547) SAASEMA: UI rakennettu[0m
+[0;32mI (11547) SAASEMA: Kaikki alustettu![0m
+[0;32mI (11547) main_task: Returned from app_main()[0m
+[0;32mI (13547) SAASEMA: Haetaan saadataa...[0m
+[0;32mI (13547) WEATHER: DNS OK[0m
+[0;32mI (13787) WEATHER: Saadata haettu: 4.0°C clear sky[0m
+[0;32mI (13997) WEATHER: Ennuste haettu (6 kohtaa)[0m
+[0;32mI (14017) SAASEMA: Tuuli: 10 ast -> P (di=0)[0m
+[0;32mI (14017) SAASEMA: UI paivitetty[0m
+[0;32mI (21597) SAASEMA: Kamera DNS OK[0m
+[0;32mI (21597) SAASEMA: Haetaan kelikuvaa...[0m
+[0;32mI (21727) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (22437) SAASEMA: JPEG haettu: 23895 tavua[0m
+[0;32mI (22437) SAASEMA: JPEG koko: 384x216[0m
+[0;32mI (22447) SAASEMA: Output buffer: 172032 tavua (aligned 384x224)[0m
+[0;32mI (22447) SAASEMA: JPEG dekoodattu: 172032 tavua (384x216)[0m
+[0;32mI (22467) SAASEMA: Kelikuva naytossa[0m
+[0;32mI (295107) DISPLAY: X=683 Y=593 strenth=7 cnt=1[0m
+[0;32mI (295137) DISPLAY: X=683 Y=593 strenth=7 cnt=1[0m
+[0;32mI (295167) DISPLAY: X=683 Y=593 strenth=7 cnt=1[0m
+[0;32mI (295197) DISPLAY: X=683 Y=593 strenth=7 cnt=1[0m
+[0;32mI (295227) DISPLAY: X=683 Y=593 strenth=7 cnt=1[0m
+[0;32mI (295257) DISPLAY: X=665 Y=593 strenth=7 cnt=1[0m
+[0;32mI (767307) DISPLAY: X=189 Y=7 strenth=23 cnt=1[0m
+[0;32mI (767337) DISPLAY: X=189 Y=7 strenth=23 cnt=1[0m
+[0;32mI (767367) DISPLAY: X=189 Y=7 strenth=23 cnt=1[0m
+[0;32mI (767397) DISPLAY: X=189 Y=7 strenth=23 cnt=1[0m
+[0;32mI (914017) SAASEMA: Haetaan saadataa...[0m
+[0;32mI (914017) WEATHER: DNS OK[0m
+[0;32mI (922467) SAASEMA: Haetaan kelikuvaa...[0m
+[1;31mE (924027) esp-tls: [sock=54] select() timeout[0m
+[1;31mE (924027) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (924027) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (924027) WEATHER: HTTP GET epaonnistui: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (924027) SAASEMA: Saahaku epaonnistui[0m
+[1;31mE (929367) esp-tls: couldn't get hostname for :weathercam.digitraffic.fi: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (929367) esp-tls: Failed to open new connection[0m
+[1;31mE (929367) transport_base: Failed to open a new connection[0m
+[1;31mE (929367) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (929377) SAASEMA: Kelikuva haku epaonnistui: err=28674 status=0 len=0[0m
+[0;32mI (954037) SAASEMA: Haetaan saadataa...[0m
+[0;32mI (954037) WEATHER: DNS OK[0m
+[0;32mI (962157) WEATHER: Saadata haettu: 4.0°C clear sky[0m
+[0;32mI (962377) WEATHER: Ennuste haettu (6 kohtaa)[0m
+[0;32mI (962387) SAASEMA: Tuuli: 10 ast -> P (di=0)[0m
+[0;32mI (962397) SAASEMA: UI paivitetty[0m
+[0;32mI (989377) SAASEMA: Haetaan kelikuvaa...[0m
+[0;32mI (989567) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (990557) SAASEMA: JPEG haettu: 21944 tavua[0m
+[0;32mI (990557) SAASEMA: JPEG koko: 384x216[0m
+[0;32mI (990557) SAASEMA: Output buffer: 172032 tavua (aligned 384x224)[0m
+[0;32mI (990557) SAASEMA: JPEG dekoodattu: 172032 tavua (384x216)[0m
+[0;32mI (990577) SAASEMA: Kelikuva naytossa[0m
+[0;32mI (1862397) SAASEMA: Haetaan saadataa...[0m
+[0;33mW (1869397) WEATHER: DNS odotus... (1/20)[0m
+[0;33mW (1877397) WEATHER: DNS odotus... (2/20)[0m
+[0;33mW (1885397) WEATHER: DNS odotus... (3/20)[0m
+[0;32mI (1890577) SAASEMA: Haetaan kelikuvaa...[0m
+[0;33mW (1893397) WEATHER: DNS odotus... (4/20)[0m
+[1;31mE (1897397) esp-tls: couldn't get hostname for :weathercam.digitraffic.fi: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (1897397) esp-tls: Failed to open new connection[0m
+[1;31mE (1897397) transport_base: Failed to open a new connection[0m
+[1;31mE (1897397) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1897407) SAASEMA: Kelikuva haku epaonnistui: err=28674 status=0 len=0[0m
+[0;33mW (1901397) WEATHER: DNS odotus... (5/20)[0m
+[0;33mW (1909397) WEATHER: DNS odotus... (6/20)[0m
+[0;33mW (1917397) WEATHER: DNS odotus... (7/20)[0m
+[0;33mW (1925397) WEATHER: DNS odotus... (8/20)[0m
+[0;33mW (1933397) WEATHER: DNS odotus... (9/20)[0m
+[0;33mW (1941397) WEATHER: DNS odotus... (10/20)[0m
+[0;33mW (1949397) WEATHER: DNS odotus... (11/20)[0m
+[0;33mW (1957397) WEATHER: DNS odotus... (12/20)[0m
+[0;32mI (1957417) SAASEMA: Haetaan kelikuvaa...[0m
+[1;31mE (1964417) esp-tls: couldn't get hostname for :weathercam.digitraffic.fi: getaddrinfo() returns 202, addrinfo=0x0[0m
+[1;31mE (1964417) esp-tls: Failed to open new connection[0m
+[0;33mW (1964417) WEATHER: DNS odotus... (13/20)[0m
+[1;31mE (1964417) transport_base: Failed to open a new connection[0m
+[1;31mE (1964427) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1964427) SAASEMA: Kelikuva haku epaonnistui: err=28674 status=0 len=0[0m
+[0;33mW (1972417) WEATHER: DNS odotus... (14/20)[0m
+[0;32mI (1974277) WEATHER: DNS OK[0m
+[0;32mI (1974537) WEATHER: Saadata haettu: 4.0°C clear sky[0m
+[0;32mI (1974847) WEATHER: Ennuste haettu (6 kohtaa)[0m
+[0;32mI (1974857) SAASEMA: Tuuli: 20 ast -> P (di=0)[0m
+[0;32mI (1974857) SAASEMA: UI paivitetty[0m
+[0;32mI (2003807) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2003837) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2003867) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2003897) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2003927) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2003957) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2003987) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2004017) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2004047) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2004077) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2004107) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2004137) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2004167) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2004197) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2004227) DISPLAY: X=171 Y=374 strenth=9 cnt=1[0m
+[0;32mI (2004257) WEATHER: DNS OK[0m
+[0;32mI (2004537) WEATHER: Saadata haettu: 4.0°C clear sky[0m
+[0;32mI (2004747) WEATHER: Ennuste haettu (6 kohtaa)[0m
+[0;32mI (2004757) SAASEMA: Tuuli: 20 ast -> P (di=0)[0m
+[0;32mI (2004757) SAASEMA: UI paivitetty[0m
+[0;32mI (2024437) SAASEMA: Haetaan kelikuvaa...[0m
+[0;32mI (2024617) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (2025387) SAASEMA: JPEG haettu: 25289 tavua[0m
+[0;32mI (2025387) SAASEMA: JPEG koko: 384x216[0m
+[0;32mI (2025387) SAASEMA: Output buffer: 172032 tavua (aligned 384x224)[0m
+[0;32mI (2025397) SAASEMA: JPEG dekoodattu: 172032 tavua (384x216)[0m
+[0;32mI (2025397) SAASEMA: Kelikuva naytossa[0m

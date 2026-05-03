@@ -1,0 +1,536 @@
+ESP-ROM:esp32p4-eco2-20240710
+BESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x31f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (25) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v1.3[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (32) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=400e0020 size=70f30h (462640) map[0m
+[0;32mI (165) esp_image: segment 1: paddr=00080f58 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00080fc8 vaddr=4ff00000 size=0f050h ( 61520) load[0m
+[0;32mI (182) esp_image: segment 3: paddr=00090020 vaddr=40000020 size=d7418h (881688) map[0m
+[0;32mI (330) esp_image: segment 4: paddr=00167440 vaddr=4ff0f050 size=04be0h ( 19424) load[0m
+[0;32mI (335) esp_image: segment 5: paddr=0016c028 vaddr=4ff13c80 size=03750h ( 14160) load[0m
+[0;32mI (340) esp_image: segment 6: paddr=0016f780 vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (346) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (347) boot: Disabling RNG early entropy source...[0m
+[0;32mI (365) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (365) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (366) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (366) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (371) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (376) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (380) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (384) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (389) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (393) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (397) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (403) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (407) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (584) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (584) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (585) esp_psram: Speed: 200MHz[0m
+[0;32mI (585) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (589) cpu_start: Multicore app[0m
+[0;32mI (1541) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1551) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1551) cpu_start: Pro cpu start user code[0m
+[0;32mI (1551) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1553) app_init: Application information:[0m
+[0;32mI (1557) app_init: Project name:     Lesson07[0m
+[0;32mI (1561) app_init: App version:      1[0m
+[0;32mI (1565) app_init: Compile time:     Apr 27 2026 22:54:15[0m
+[0;32mI (1570) app_init: ELF file SHA256:  e373c161a...[0m
+[0;32mI (1574) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1578) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1582) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1586) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1590) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1597) heap_init: At 4FF249B0 len 00016610 (89 KiB): RETENT_RAM[0m
+[0;32mI (1602) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1608) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1613) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1618) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1624) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1631) spi_flash: detected chip: generic[0m
+[0;32mI (1634) spi_flash: flash io: dio[0m
+[0;32mI (1637) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1642) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1650) H_API: ** add_esp_wifi_remote_channels **[0m
+[1;31mE (1655) HS_MP: mempool create failed: no mem[0m
+
+[0;33mW (1658) H_SDIO_DRV: mempool create failed, using direct alloc[0m
+[0;32mI (1664) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1673) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1681) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1690) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1696) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1703) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1703) main_task: Started on CPU0[0m
+[0;32mI (1713) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1723) main_task: Calling app_main()[0m
+[0;32mI (1723) SAASEMA: === Saaasema ESP32-P4 kaynnistyy ===[0m
+[0;32mI (1723) gpio: GPIO[31]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1733) ek79007: version: 1.0.4[0m
+[0;32mI (1893) LVGL: Starting LVGL task[0m
+[1;31mE (1893) lcd_panel: esp_lcd_panel_swap_xy(50): swap_xy is not supported by this panel[0m
+[0;32mI (1893) SAASEMA: LCD alustettu[0m
+[0;32mI (1893) SAASEMA: Taustavalo paalla[0m
+[0;32mI (1903) gpio: GPIO[40]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1903) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1933) gpio: GPIO[42]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (1933) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1933) GT911: TouchPad_Config_Version:255[0m
+[0;32mI (1933) SAASEMA: Kosketusnaytto alustettu[0m
+[0;32mI (1933) SAASEMA: LVGL touch indev rekisteroity[0m
+[0;32mI (1943) SAASEMA: Odotetaan ESP-Hosted alustusta...[0m
+[0;32mI (4943) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (4943) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (4943) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (4943) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (6473) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (6473) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (6473) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (6503) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6503) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (6503) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (6603) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (6603) transport: set_transport_state: 1[0m
+[0;32mI (6603) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (6703) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (6703) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (6703) H_SDIO_DRV: Startin[0m
+assert failed: sdio_rx_get_buffer sdio_drv.c:955 (*buf)
+Core  1 register dump:
+MEPC    : 0x4ff00f5e  RA      : 0x4ff09ca6  SP      : 0x4ff32ed0  GP      : 0x4ff14480  
+TP      : 0x4ff33070  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000090  S1      : 0x00000001  A0      : 0x4ff32f0c  A1      : 0x4ff16cf1  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x4ff24000  
+A6      : 0x0000000c  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x4ff33017  
+S4      : 0x4ff16cf0  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00011880  MTVEC   : 0x4ff00003  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000001  
+
+warning: could not convert 'main' from the host encoding (CP1252) to UTF-32.
+This normally should not happen, please file a bug report.
+panic_abort (details=details@entry=0x4ff32f0c "assert failed: sdio_rx_get_buffer sdio_drv.c:955 (*buf)") at C:/esp/v5.4.4/esp-idf/components/esp_system/panic.c:491
+491	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x4ff32f0c "assert failed: sdio_rx_get_buffer sdio_drv.c:955 (*buf)") at C:/esp/v5.4.4/esp-idf/components/esp_system/panic.c:491
+#1  0x4ff09ca6 in esp_system_abort (details=details@entry=0x4ff32f0c "assert failed: sdio_rx_get_buffer sdio_drv.c:955 (*buf)") at C:/esp/v5.4.4/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4ff12abc in __assert_func (file=0x400eff74 "", line=<optimized out>, func=<optimized out>, expr=0x400eff24 "") at C:/esp/v5.4.4/esp-idf/components/newlib/assert.c:80
+#3  0x00000000 in ?? ()
+Backtrace stopped: frame did not save the PC
+
+4ff33010: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x0005b9b0
+4ff33030: 0x00000000 0x00000000 0x00000000 0x4ff0aa2a 0x00000000 0x00000000 0x00000000 0x00000000
+4ff33050: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4ff33070: 0x00000000 0x4ff31ca0 0x4ff31ca0 0x00000000 0x00000000 0x00000000 0xa5a5a5a5 0xa5a5a5a5
+4ff33090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0x00000160 0x4ff32de0 0x00000258 0x4ff177ac
+4ff330b0: 0x4ff34620 0x4ff330a4 0x4ff177a4 0x00000002 0x4ff30b78 0x4ff30b78 0x4ff330a4 0x00000000
+4ff330d0: 0x00000017 0x4ff31ca0 0x6f696473 0x6165725f 0x00000064 0x00000000 0x7fffffff 0x4ff33090
+4ff330f0: 0x00000017 0x00000001 0x00000000 0x00000000 0x00000000 0x4ff24f48 0x4ff24fb0 0x4ff25018
+4ff33110: 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000 0x40007c8a 0x00000000
+4ff33130: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4ff33150: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4ff33170: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4ff33190: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4ff331b0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4ff331d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+4ff331f0: 0x00000000 0x00000000 0xbbb7731b 0x725bac28 0x4ff3309c 0x0000000c 0x4ff3461c 0x4ff249c4
+4ff33210: 0x4ff33200 0x00001400 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4ff33230: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4ff33250: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4ff33270: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4ff33290: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+4ff332b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: e373c161a
+
+Rebooting...
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x400089ae
+Core1 Saved PC:0x4ff04ea6
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=400e0020 size=70f30h (462640) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00080f58 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00080fc8 vaddr=4ff00000 size=0f050h ( 61520) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00090020 vaddr=40000020 size=d7418h (881688) map[0m
+[0;32mI (299) esp_image: segment 4: paddr=00167440 vaddr=4ff0f050 size=04be0h ( 19424) load[0m
+[0;32mI (304) esp_image: segment 5: paddr=0016c028 vaddr=4ff13c80 size=03750h ( 14160) load[0m
+[0;32mI (307) esp_image: segment 6: paddr=0016f780 vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (316) boot: Disabling RNG early entropy source...[0m
+[0;32mI (335) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (335) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (335) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (336) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (340) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (345) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (349) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (354) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (358) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (362) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (367) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (372) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (376) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (554) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (554) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (555) esp_psram: Speed: 200MHz[0m
+[0;32mI (555) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (558) cpu_start: Multicore app[0m
+[0;32mI (1511) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1521) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1521) cpu_start: Pro cpu start user code[0m
+[0;32mI (1521) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1523) app_init: Application information:[0m
+[0;32mI (1527) app_init: Project name:     Lesson07[0m
+[0;32mI (1531) app_init: App version:      1[0m
+[0;32mI (1535) app_init: Compile time:     Apr 27 2026 22:54:15[0m
+[0;32mI (1540) app_init: ELF file SHA256:  e373c161a...[0m
+[0;32mI (1544) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1548) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1552) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1556) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1560) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1566) heap_init: At 4FF249B0 len 00016610 (89 KiB): RETENT_RAM[0m
+[0;32mI (1572) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1577) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1583) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1588) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1593) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1601) spi_flash: detected chip: generic[0m
+[0;32mI (1604) spi_flash: flash io: dio[0m
+[0;32mI (1607) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1611) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1619) H_API: ** add_esp_wifi_remote_channels **[0m
+[1;31mE (1624) HS_MP: mempool create failed: no mem[0m
+
+[0;33mW (1628) H_SDIO_DRV: mempool create failed, using direct alloc[0m
+[0;32mI (1634) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1642) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1651) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1660) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1665) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1672) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1672) main_task: Started on CPU0[0m
+[0;32mI (1682) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1692) main_task: Calling app_main()[0m
+[0;32mI (1692) SAASEMA: === Saaasema ESP32-P4 kaynnistyy ===[0m
+[0;32mI (1692) gpio: GPIO[31]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1702) ek79007: version: 1.0.4[0m
+[0;32mI (1862) LVGL: Starting LVGL task[0m
+[1;31mE (1862) lcd_panel: esp_lcd_panel_swap_xy(50): swap_xy is not supported by this panel[0m
+[0;32mI (1862) SAASEMA: LCD alustettu[0m
+[0;32mI (1862) SAASEMA: Taustavalo paalla[0m
+[0;32mI (1872) gpio: GPIO[40]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1872) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1902) gpio: GPIO[42]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (1902) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1902) GT911: TouchPad_Config_Version:255[0m
+[0;32mI (1902) SAASEMA: Kosketusnaytto alustettu[0m
+[0;32mI (1902) SAASEMA: LVGL touch indev rekisteroity[0m
+[0;32mI (1912) SAASEMA: Odotetaan ESP-Hosted alustusta...[0m
+[0;32mI (4912) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (4912) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (4912) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (4912) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (6442) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (6442) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (6442) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (6472) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6472) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (6472) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (6572) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (6572) transport: set_transport_state: 1[0m
+[0;32mI (6572) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (6672) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (6672) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (6672) H_SDIO_DRV: Starting SDIO process rx task[0m
+[0;32mI (16372) transport: Not able to connect with ESP-Hosted slave device[0m
+[0;33mW (16372) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (16372) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (16372) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (17902) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (17902) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (17902) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[1;31mE (17932) sdmmc_io: sdmmc_io_rw_extended: sdmmc_send_cmd returned 0x107[0m
+[1;31mE (17932) H_SDIO_DRV: failed to read registers[0m
+[0;32mI (17932) H_SDIO_DRV: Host is resetting itself, to avoid any sdio race condition[0m
+[0;32mI (17932) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04e6c
+Core1 Saved PC:0x4ff04fc8
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400e0020 size=70f30h (462640) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00080f58 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00080fc8 vaddr=4ff00000 size=0f050h ( 61520) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00090020 vaddr=40000020 size=d7418h (881688) map[0m
+[0;32mI (299) esp_image: segment 4: paddr=00167440 vaddr=4ff0f050 size=04be0h ( 19424) load[0m
+[0;32mI (303) esp_image: segment 5: paddr=0016c028 vaddr=4ff13c80 size=03750h ( 14160) load[0m
+[0;32mI (307) esp_image: segment 6: paddr=0016f780 vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (315) boot: Disabling RNG early entropy source...[0m
+[0;32mI (334) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (335) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (335) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (335) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (340) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (345) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (349) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (353) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (358) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (362) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (367) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (372) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (376) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (553) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (554) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (554) esp_psram: Speed: 200MHz[0m
+[0;32mI (555) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (558) cpu_start: Multicore app[0m
+[0;32mI (1510) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1520) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1521) cpu_start: Pro cpu start user code[0m
+[0;32mI (1521) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1523) app_init: Application information:[0m
+[0;32mI (1527) app_init: Project name:     Lesson07[0m
+[0;32mI (1531) app_init: App version:      1[0m
+[0;32mI (1534) app_init: Compile time:     Apr 27 2026 22:54:15[0m
+[0;32mI (1539) app_init: ELF file SHA256:  e373c161a...[0m
+[0;32mI (1544) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1548) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1552) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1556) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1560) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1566) heap_init: At 4FF249B0 len 00016610 (89 KiB): RETENT_RAM[0m
+[0;32mI (1572) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1577) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1582) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1588) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1593) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1600) spi_flash: detected chip: generic[0m
+[0;32mI (1603) spi_flash: flash io: dio[0m
+[0;32mI (1606) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1611) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1619) H_API: ** add_esp_wifi_remote_channels **[0m
+[1;31mE (1624) HS_MP: mempool create failed: no mem[0m
+
+[0;33mW (1628) H_SDIO_DRV: mempool create failed, using direct alloc[0m
+[0;32mI (1634) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1642) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1650) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1659) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1665) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1672) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1672) main_task: Started on CPU0[0m
+[0;32mI (1682) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1692) main_task: Calling app_main()[0m
+[0;32mI (1692) SAASEMA: === Saaasema ESP32-P4 kaynnistyy ===[0m
+[0;32mI (1692) gpio: GPIO[31]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1702) ek79007: version: 1.0.4[0m
+[0;32mI (1862) LVGL: Starting LVGL task[0m
+[1;31mE (1862) lcd_panel: esp_lcd_panel_swap_xy(50): swap_xy is not supported by this panel[0m
+[0;32mI (1862) SAASEMA: LCD alustettu[0m
+[0;32mI (1862) SAASEMA: Taustavalo paalla[0m
+[0;32mI (1872) gpio: GPIO[40]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1872) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1902) gpio: GPIO[42]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (1902) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1902) GT911: TouchPad_Config_Version:255[0m
+[0;32mI (1902) SAASEMA: Kosketusnaytto alustettu[0m
+[0;32mI (1902) SAASEMA: LVGL touch indev rekisteroity[0m
+[0;32mI (1912) SAASEMA: Odotetaan ESP-Hosted alustusta...[0m
+[0;32mI (4912) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (4912) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (4912) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (4912) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (6442) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (6442) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (6442) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (6462) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6462) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (6462) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (6562) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (6562) transport: set_transport_state: 1[0m
+[0;32mI (6562) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (6572) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (6572) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (6572) H_SDIO_DRV: Starting SDIO process rx task[0m
+[0;32mI (16362) transport: Not able to connect with ESP-Hosted slave device[0m
+[0;33mW (16362) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (16362) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (16362) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (17892) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (17892) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (17892) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[1;31mE (17922) sdmmc_io: sdmmc_io_rw_extended: sdmmc_send_cmd returned 0x107[0m
+[1;31mE (17922) H_SDIO_DRV: failed to read registers[0m
+[0;32mI (17922) H_SDIO_DRV: Host is resetting itself, to avoid any sdio race condition[0m
+[0;32mI (17922) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04e6c
+Core1 Saved PC:0x4ff04fc8
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400e0020 size=70f30h (462640) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00080f58 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00080fc8 vaddr=4ff00000 size=0f050h ( 61520) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00090020 vaddr=40000020 size=d7418h (881688) map[0m
+[0;32mI (299) esp_image: segment 4: paddr=00167440 vaddr=4ff0f050 size=04be0h ( 19424) load[0m
+[0;32mI (303) esp_image: segment 5: paddr=0016c028 vaddr=4ff13c80 size=03750h ( 14160) load[0m
+[0;32mI (307) esp_image: segment 6: paddr=0016f780 vaddr=50108080 size=0001ch (    28) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (315) boot: Disabling RNG early entropy source...[0m
+[0;32mI (334) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (335) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (335) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (335) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (340) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (345) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (349) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (353) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (358) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (362) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (367) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (372) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (376) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (553) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (554) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (554) esp_psram: Speed: 200MHz[0m
+[0;32mI (555) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (558) cpu_start: Multicore app[0m
+[0;32mI (1510) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1520) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1521) cpu_start: Pro cpu start user code[0m
+[0;32mI (1521) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1523) app_init: Application information:[0m
+[0;32mI (1527) app_init: Project name:     Lesson07[0m
+[0;32mI (1531) app_init: App version:      1[0m
+[0;32mI (1534) app_init: Compile time:     Apr 27 2026 22:54:15[0m
+[0;32mI (1539) app_init: ELF file SHA256:  e373c161a...[0m
+[0;32mI (1544) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1548) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1552) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1556) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1560) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1566) heap_init: At 4FF249B0 len 00016610 (89 KiB): RETENT_RAM[0m
+[0;32mI (1572) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1577) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1582) heap_init: At 5010809C len 00007F64 (31 KiB): RTCRAM[0m
+[0;32mI (1588) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1593) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1600) spi_flash: detected chip: generic[0m
+[0;32mI (1603) spi_flash: flash io: dio[0m
+[0;32mI (1606) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1611) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1619) H_API: ** add_esp_wifi_remote_channels **[0m
+[1;31mE (1624) HS_MP: mempool create failed: no mem[0m
+
+[0;33mW (1628) H_SDIO_DRV: mempool create failed, using direct alloc[0m
+[0;32mI (1634) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1642) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1650) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1659) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1665) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1672) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1672) main_task: Started on CPU0[0m
+[0;32mI (1682) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1692) main_task: Calling app_main()[0m
+[0;32mI (1692) SAASEMA: === Saaasema ESP32-P4 kaynnistyy ===[0m
+[0;32mI (1692) gpio: GPIO[31]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1702) ek79007: version: 1.0.4[0m
+[0;32mI (1862) LVGL: Starting LVGL task[0m
+[1;31mE (1862) lcd_panel: esp_lcd_panel_swap_xy(50): swap_xy is not supported by this panel[0m
+[0;32mI (1862) SAASEMA: LCD alustettu[0m
+[0;32mI (1862) SAASEMA: Taustavalo paalla[0m
+[0;32mI (1872) gpio: GPIO[40]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1872) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1902) gpio: GPIO[42]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (1902) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1902) GT911: TouchPad_Config_Version:255[0m
+[0;32mI (1902) SAASEMA: Kosketusnaytto alustettu[0m
+[0;32mI (1902) SAASEMA: LVGL touch indev rekisteroity[0m
+[0;32mI (1912) SAASEMA: Odotetaan ESP-Hosted alustusta...[0m

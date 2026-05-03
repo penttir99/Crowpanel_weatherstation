@@ -1,0 +1,12 @@
+CMake Error at C:/esp/v5.4.4/esp-idf/tools/cmake/build.cmake:330 (message):
+  Failed to resolve component 'esp_lcd_touch_gt911' required by component
+  'bsp_display': unknown name.
+Call Stack (most recent call first):
+  C:/esp/v5.4.4/esp-idf/tools/cmake/build.cmake:373 (__build_resolve_and_add_req)
+  C:/esp/v5.4.4/esp-idf/tools/cmake/build.cmake:374 (__build_expand_requirements)
+  C:/esp/v5.4.4/esp-idf/tools/cmake/build.cmake:686 (__build_expand_requirements)
+  C:/esp/v5.4.4/esp-idf/tools/cmake/project.cmake:722 (idf_build_process)
+  CMakeLists.txt:9 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

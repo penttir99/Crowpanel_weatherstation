@@ -1,0 +1,6 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM7 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4009b178: [0;33mwifi_sta_receive[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_wifi/src/wifi_netif.c[0m[0m:[1;31m38[0m
+[0m

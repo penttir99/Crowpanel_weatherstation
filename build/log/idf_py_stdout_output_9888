@@ -1,0 +1,87 @@
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\P4\Turn_on_the_screen\build\esp-idf\esptool_py && C:\Users\pentt\.espressif\python_env\idf5.4_py3.13_env\Scripts\python.exe C:/esp/v5.4.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/P4/Turn_on_the_screen/build/partition_table/partition-table.bin C:/P4/Turn_on_the_screen/build/Lesson07.bin"
+Lesson07.bin binary size 0x176150 bytes. Smallest app partition is 0x1f0000 bytes. 0x79eb0 bytes (25%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\P4\Turn_on_the_screen\build\bootloader\esp-idf\esptool_py && C:\Users\pentt\.espressif\python_env\idf5.4_py3.13_env\Scripts\python.exe C:/esp/v5.4.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 C:/P4/Turn_on_the_screen/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5890 bytes. 0x770 bytes (8%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\esp\v5.4.4\esp-idf\components\esptool_py && C:\Users\pentt\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/esp/v5.4.4/esp-idf -D SERIAL_TOOL=C:/Users/pentt/.espressif/python_env/idf5.4_py3.13_env/Scripts/python.exe;;C:/esp/v5.4.4/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32p4 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/P4/Turn_on_the_screen/build -P C:/esp/v5.4.4/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32p4 -p COM7 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader/bootloader.bin 0x10000 Lesson07.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.11.0
+Serial port COM7
+Connecting....
+Chip is ESP32-P4 (revision v1.3)
+Features: High-Performance MCU
+Crystal is 40MHz
+MAC: 30:ed:a0:e2:e1:fc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00002000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00186fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22672 bytes to 13938...
+Writing at 0x00002000... (100 %)
+Wrote 22672 bytes (13938 compressed) at 0x00002000 in 0.7 seconds (effective 277.3 kbit/s)...
+Hash of data verified.
+Compressed 1532240 bytes to 759682...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001f154... (4 %)
+Writing at 0x0002be8d... (6 %)
+Writing at 0x00039280... (8 %)
+Writing at 0x0004a52d... (10 %)
+Writing at 0x00051c7c... (12 %)
+Writing at 0x0005b44e... (14 %)
+Writing at 0x000693cf... (17 %)
+Writing at 0x0007be5d... (19 %)
+Writing at 0x0008096a... (21 %)
+Writing at 0x00085826... (23 %)
+Writing at 0x0008ad23... (25 %)
+Writing at 0x00091c3c... (27 %)
+Writing at 0x00099116... (29 %)
+Writing at 0x0009ff09... (31 %)
+Writing at 0x000a700c... (34 %)
+Writing at 0x000aed54... (36 %)
+Writing at 0x000b9f71... (38 %)
+Writing at 0x000c24db... (40 %)
+Writing at 0x000c99a3... (42 %)
+Writing at 0x000d0934... (44 %)
+Writing at 0x000d786b... (46 %)
+Writing at 0x000dd935... (48 %)
+Writing at 0x000e3cf0... (51 %)
+Writing at 0x000ea53f... (53 %)
+Writing at 0x000f1d88... (55 %)
+Writing at 0x000f8539... (57 %)
+Writing at 0x000fed79... (59 %)
+Writing at 0x00107173... (61 %)
+Writing at 0x0010da10... (63 %)
+Writing at 0x001148b9... (65 %)
+Writing at 0x0011bd1e... (68 %)
+Writing at 0x00122c02... (70 %)
+Writing at 0x00129ace... (72 %)
+Writing at 0x00131125... (74 %)
+Writing at 0x001385af... (76 %)
+Writing at 0x0013efea... (78 %)
+Writing at 0x00145841... (80 %)
+Writing at 0x0014c54e... (82 %)
+Writing at 0x00152ace... (85 %)
+Writing at 0x00159382... (87 %)
+Writing at 0x00160b73... (89 %)
+Writing at 0x00166f70... (91 %)
+Writing at 0x0016d040... (93 %)
+Writing at 0x00173713... (95 %)
+Writing at 0x0017a6d1... (97 %)
+Writing at 0x00182045... (100 %)
+Wrote 1532240 bytes (759682 compressed) at 0x00010000 in 19.3 seconds (effective 636.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.1 seconds (effective 378.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

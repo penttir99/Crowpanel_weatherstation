@@ -1,0 +1,506 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\P4\Turn_on_the_screen\build\bootloader\esp-idf\esptool_py && C:\Users\pentt\.espressif\python_env\idf5.4_py3.13_env\Scripts\python.exe C:/esp/v5.4.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 C:/P4/Turn_on_the_screen/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5890 bytes. 0x770 bytes (8%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+ccache C:\Users\pentt\.espressif\tools\riscv32-esp-elf\esp-14.2.0_20260121\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.4.4\" -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/P4/Turn_on_the_screen/build/config -IC:/esp/v5.4.4/esp-idf/components/newlib/platform_include -IC:/esp/v5.4.4/esp-idf/components/freertos/config/include -IC:/esp/v5.4.4/esp-idf/components/freertos/config/include/freertos -IC:/esp/v5.4.4/esp-idf/components/freertos/config/riscv/include -IC:/esp/v5.4.4/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/esp/v5.4.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -IC:/esp/v5.4.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -IC:/esp/v5.4.4/esp-idf/components/freertos/esp_additions/include -IC:/esp/v5.4.4/esp-idf/components/esp_hw_support/include -IC:/esp/v5.4.4/esp-idf/components/esp_hw_support/include/soc -IC:/esp/v5.4.4/esp-idf/components/esp_hw_support/include/soc/esp32p4 -IC:/esp/v5.4.4/esp-idf/components/esp_hw_support/dma/include -IC:/esp/v5.4.4/esp-idf/components/esp_hw_support/ldo/include -IC:/esp/v5.4.4/esp-idf/components/esp_hw_support/debug_probe/include -IC:/esp/v5.4.4/esp-idf/components/esp_hw_support/port/esp32p4/. -IC:/esp/v5.4.4/esp-idf/components/esp_hw_support/port/esp32p4/include -IC:/esp/v5.4.4/esp-idf/components/esp_hw_support/port/esp32p4/private_include -IC:/esp/v5.4.4/esp-idf/components/heap/include -IC:/esp/v5.4.4/esp-idf/components/heap/tlsf -IC:/esp/v5.4.4/esp-idf/components/log/include -IC:/esp/v5.4.4/esp-idf/components/soc/include -IC:/esp/v5.4.4/esp-idf/components/soc/esp32p4 -IC:/esp/v5.4.4/esp-idf/components/soc/esp32p4/include -IC:/esp/v5.4.4/esp-idf/components/soc/esp32p4/register/hw_ver1 -IC:/esp/v5.4.4/esp-idf/components/hal/platform_port/include -IC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include -IC:/esp/v5.4.4/esp-idf/components/hal/include -IC:/esp/v5.4.4/esp-idf/components/esp_rom/include -IC:/esp/v5.4.4/esp-idf/components/esp_rom/esp32p4/include -IC:/esp/v5.4.4/esp-idf/components/esp_rom/esp32p4/include/esp32p4 -IC:/esp/v5.4.4/esp-idf/components/esp_rom/esp32p4 -IC:/esp/v5.4.4/esp-idf/components/esp_common/include -IC:/esp/v5.4.4/esp-idf/components/esp_system/include -IC:/esp/v5.4.4/esp-idf/components/esp_system/port/soc -IC:/esp/v5.4.4/esp-idf/components/esp_system/port/include/riscv -IC:/esp/v5.4.4/esp-idf/components/esp_system/port/include/private -IC:/esp/v5.4.4/esp-idf/components/riscv/include -IC:/esp/v5.4.4/esp-idf/components/lwip/include -IC:/esp/v5.4.4/esp-idf/components/lwip/include/apps -IC:/esp/v5.4.4/esp-idf/components/lwip/include/apps/sntp -IC:/esp/v5.4.4/esp-idf/components/lwip/lwip/src/include -IC:/esp/v5.4.4/esp-idf/components/lwip/port/include -IC:/esp/v5.4.4/esp-idf/components/lwip/port/freertos/include -IC:/esp/v5.4.4/esp-idf/components/lwip/port/esp32xx/include -IC:/esp/v5.4.4/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/esp/v5.4.4/esp-idf/components/lwip/port/esp32xx/include/sys -IC:/P4/Turn_on_the_screen/peripheral/bsp_illuminate/include -IC:/esp/v5.4.4/esp-idf/components/driver/deprecated -IC:/esp/v5.4.4/esp-idf/components/driver/i2c/include -IC:/esp/v5.4.4/esp-idf/components/driver/touch_sensor/include -IC:/esp/v5.4.4/esp-idf/components/driver/twai/include -IC:/esp/v5.4.4/esp-idf/components/esp_pm/include -IC:/esp/v5.4.4/esp-idf/components/esp_ringbuf/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_gpio/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_pcnt/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_gptimer/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_spi/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_mcpwm/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_ana_cmpr/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_i2s/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_sdmmc/include -IC:/esp/v5.4.4/esp-idf/components/sdmmc/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_sdspi/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_sdio/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_dac/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_rmt/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_tsens/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_sdm/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_i2c/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_uart/include -IC:/esp/v5.4.4/esp-idf/components/vfs/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_ledc/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_parlio/include -IC:/esp/v5.4.4/esp-idf/components/esp_driver_usb_serial_jtag/include -IC:/P4/Turn_on_the_screen/managed_components/espressif__esp_lcd_ek79007/include -IC:/esp/v5.4.4/esp-idf/components/esp_lcd/include -IC:/esp/v5.4.4/esp-idf/components/esp_lcd/interface -IC:/esp/v5.4.4/esp-idf/components/esp_lcd/rgb/include -IC:/esp/v5.4.4/esp-idf/components/esp_lcd/dsi/include -IC:/P4/Turn_on_the_screen/managed_components/lvgl__lvgl -IC:/P4/Turn_on_the_screen/managed_components/lvgl__lvgl/src -IC:/P4/Turn_on_the_screen/managed_components -IC:/P4/Turn_on_the_screen/managed_components/lvgl__lvgl/examples -IC:/P4/Turn_on_the_screen/managed_components/lvgl__lvgl/demos -IC:/esp/v5.4.4/esp-idf/components/esp_timer/include -IC:/P4/Turn_on_the_screen/managed_components/espressif__esp_lvgl_port/include -IC:/P4/Turn_on_the_screen/managed_components/espressif__esp_wifi_remote/idf_v5.4/include/injected -IC:/esp/v5.4.4/esp-idf/components/esp_wifi/include -IC:/esp/v5.4.4/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -IC:/esp/v5.4.4/esp-idf/components/esp_event/include -IC:/esp/v5.4.4/esp-idf/components/esp_netif/include -IC:/P4/Turn_on_the_screen/managed_components/espressif__esp_wifi_remote/include -IC:/P4/Turn_on_the_screen/managed_components/espressif__esp_wifi_remote/idf_v5.4/include -IC:/esp/v5.4.4/esp-idf/components/nvs_flash/include -IC:/esp/v5.4.4/esp-idf/components/esp_partition/include -IC:/esp/v5.4.4/esp-idf/components/esp_http_client/include -IC:/esp/v5.4.4/esp-idf/components/json/cJSON -IC:/P4/Turn_on_the_screen/peripheral/bsp_display/include -IC:/P4/Turn_on_the_screen/managed_components/espressif__esp_lcd_touch_gt911/include -IC:/P4/Turn_on_the_screen/managed_components/espressif__esp_lcd_touch/include -IC:/P4/Turn_on_the_screen/peripheral/bsp_i2c/include -IC:/esp/v5.4.4/esp-idf/components/mbedtls/port/include -IC:/esp/v5.4.4/esp-idf/components/mbedtls/mbedtls/include -IC:/esp/v5.4.4/esp-idf/components/mbedtls/mbedtls/library -IC:/esp/v5.4.4/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/esp/v5.4.4/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/esp/v5.4.4/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/esp/v5.4.4/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/esp/v5.4.4/esp-idf/components/esp_driver_jpeg/include -IC:/P4/Turn_on_the_screen/managed_components/espressif__esp_hosted/host -IC:/P4/Turn_on_the_screen/managed_components/espressif__esp_hosted/host/api/include -march=rv32imafc_zicsr_zifencei_xesploop_xespv -mabi=ilp32f  -fdiagnostics-color=always -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=C:/P4/Turn_on_the_screen=. -fmacro-prefix-map=C:/esp/v5.4.4/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -march=rv32imafc_zicsr_zifencei_xesppie -std=gnu17 -Wno-old-style-declaration -DESP_LCD_EK79007_VER_MAJOR=1 -DESP_LCD_EK79007_VER_MINOR=0 -DESP_LCD_EK79007_VER_PATCH=4 -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c C:/P4/Turn_on_the_screen/main/main.c
+C:/P4/Turn_on_the_screen/main/main.c: In function 'camera_task':
+C:/P4/Turn_on_the_screen/main/main.c:466:15: error: implicit declaration of function 'jpeg_decoder_get_image_info'; did you mean 'jpeg_decoder_get_info'? [-Wimplicit-function-declaration]
+  466 |         ret = jpeg_decoder_get_image_info(decoder, cam_buf, cam_http_len, &pic_info);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |               jpeg_decoder_get_info
+In file included from C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:15,
+                 from C:/P4/Turn_on_the_screen/main/main.c:1:
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:98:31: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   98 | #define LOG_COLOR_E           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_E'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:182:86: note: in expansion of macro 'LOG_FORMAT'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:472:9: note: in expansion of macro 'ESP_LOGI'
+  472 |         ESP_LOGI(TAG, "JPEG koko: %dx%d", pic_info.width, pic_info.height);
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:98:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   98 | #define LOG_COLOR_E           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_E'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:182:86: note: in expansion of macro 'LOG_FORMAT'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:472:9: note: in expansion of macro 'ESP_LOGI'
+  472 |         ESP_LOGI(TAG, "JPEG koko: %dx%d", pic_info.width, pic_info.height);
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:99:31: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   99 | #define LOG_COLOR_W           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_W'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:183:86: note: in expansion of macro 'LOG_FORMAT'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:472:9: note: in expansion of macro 'ESP_LOGI'
+  472 |         ESP_LOGI(TAG, "JPEG koko: %dx%d", pic_info.width, pic_info.height);
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:99:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   99 | #define LOG_COLOR_W           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_W'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:183:86: note: in expansion of macro 'LOG_FORMAT'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:472:9: note: in expansion of macro 'ESP_LOGI'
+  472 |         ESP_LOGI(TAG, "JPEG koko: %dx%d", pic_info.width, pic_info.height);
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:101:31: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  101 | #define LOG_COLOR_D           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_D'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:184:86: note: in expansion of macro 'LOG_FORMAT'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:472:9: note: in expansion of macro 'ESP_LOGI'
+  472 |         ESP_LOGI(TAG, "JPEG koko: %dx%d", pic_info.width, pic_info.height);
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:101:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  101 | #define LOG_COLOR_D           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_D'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:184:86: note: in expansion of macro 'LOG_FORMAT'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:472:9: note: in expansion of macro 'ESP_LOGI'
+  472 |         ESP_LOGI(TAG, "JPEG koko: %dx%d", pic_info.width, pic_info.height);
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:102:31: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  102 | #define LOG_COLOR_V           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_V'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:185:86: note: in expansion of macro 'LOG_FORMAT'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:472:9: note: in expansion of macro 'ESP_LOGI'
+  472 |         ESP_LOGI(TAG, "JPEG koko: %dx%d", pic_info.width, pic_info.height);
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:102:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  102 | #define LOG_COLOR_V           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_V'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:185:86: note: in expansion of macro 'LOG_FORMAT'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:472:9: note: in expansion of macro 'ESP_LOGI'
+  472 |         ESP_LOGI(TAG, "JPEG koko: %dx%d", pic_info.width, pic_info.height);
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:100:31: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  100 | #define LOG_COLOR_I           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_I'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:186:86: note: in expansion of macro 'LOG_FORMAT'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:472:9: note: in expansion of macro 'ESP_LOGI'
+  472 |         ESP_LOGI(TAG, "JPEG koko: %dx%d", pic_info.width, pic_info.height);
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:100:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  100 | #define LOG_COLOR_I           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_I'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:186:86: note: in expansion of macro 'LOG_FORMAT'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:472:9: note: in expansion of macro 'ESP_LOGI'
+  472 |         ESP_LOGI(TAG, "JPEG koko: %dx%d", pic_info.width, pic_info.height);
+      |         ^~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:475:14: error: 'jpeg_decode_memory_alloc_cfg_t' has no member named 'inbuf_type'
+  475 |             .inbuf_type  = JPEG_DEC_ALLOC_INPUT_PSRAM,
+      |              ^~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:475:28: error: 'JPEG_DEC_ALLOC_INPUT_PSRAM' undeclared (first use in this function); did you mean 'JPEG_DEC_ALLOC_INPUT_BUFFER'?
+  475 |             .inbuf_type  = JPEG_DEC_ALLOC_INPUT_PSRAM,
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                            JPEG_DEC_ALLOC_INPUT_BUFFER
+C:/P4/Turn_on_the_screen/main/main.c:475:28: note: each undeclared identifier is reported only once for each function it appears in
+C:/P4/Turn_on_the_screen/main/main.c:476:14: error: 'jpeg_decode_memory_alloc_cfg_t' has no member named 'outbuf_type'
+  476 |             .outbuf_type = JPEG_DEC_ALLOC_OUTPUT_PSRAM,
+      |              ^~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:476:28: error: 'JPEG_DEC_ALLOC_OUTPUT_PSRAM' undeclared (first use in this function); did you mean 'JPEG_DEC_ALLOC_OUTPUT_BUFFER'?
+  476 |             .outbuf_type = JPEG_DEC_ALLOC_OUTPUT_PSRAM,
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                            JPEG_DEC_ALLOC_OUTPUT_BUFFER
+C:/P4/Turn_on_the_screen/main/main.c:476:28: warning: excess elements in struct initializer
+C:/P4/Turn_on_the_screen/main/main.c:476:28: note: (near initialization for 'mem_cfg')
+C:/P4/Turn_on_the_screen/main/main.c:479:36: error: passing argument 5 of 'jpeg_decoder_process' from incompatible pointer type [-Wincompatible-pointer-types]
+  479 |                                    &mem_cfg, &out_buf, &out_size);
+      |                                    ^~~~~~~~
+      |                                    |
+      |                                    jpeg_decode_memory_alloc_cfg_t *
+In file included from C:/P4/Turn_on_the_screen/main/main.c:10:
+C:/esp/v5.4.4/esp-idf/components/esp_driver_jpeg/include/driver/jpeg_decode.h:108:165: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'jpeg_decode_memory_alloc_cfg_t *'
+  108 | esp_err_t jpeg_decoder_process(jpeg_decoder_handle_t decoder_engine, const jpeg_decode_cfg_t *decode_cfg, const uint8_t *bit_stream, uint32_t stream_size, uint8_t *decode_outbuf, uint32_t outbuf_size, uint32_t *out_size);
+      |                                                                                                                                                            ~~~~~~~~~^~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:479:46: error: passing argument 6 of 'jpeg_decoder_process' makes integer from pointer without a cast [-Wint-conversion]
+  479 |                                    &mem_cfg, &out_buf, &out_size);
+      |                                              ^~~~~~~~
+      |                                              |
+      |                                              uint8_t ** {aka unsigned char **}
+C:/esp/v5.4.4/esp-idf/components/esp_driver_jpeg/include/driver/jpeg_decode.h:108:189: note: expected 'uint32_t' {aka 'long unsigned int'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+  108 | esp_err_t jpeg_decoder_process(jpeg_decoder_handle_t decoder_engine, const jpeg_decode_cfg_t *decode_cfg, const uint8_t *bit_stream, uint32_t stream_size, uint8_t *decode_outbuf, uint32_t outbuf_size, uint32_t *out_size);
+      |                                                                                                                                                                                    ~~~~~~~~~^~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:98:31: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   98 | #define LOG_COLOR_E           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_E'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:182:86: note: in expansion of macro 'LOG_FORMAT'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:98:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   98 | #define LOG_COLOR_E           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_E'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:182:86: note: in expansion of macro 'LOG_FORMAT'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:98:31: error: format '%d' expects argument of type 'int', but argument 8 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   98 | #define LOG_COLOR_E           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_E'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:182:86: note: in expansion of macro 'LOG_FORMAT'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:99:31: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   99 | #define LOG_COLOR_W           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_W'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:183:86: note: in expansion of macro 'LOG_FORMAT'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:99:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   99 | #define LOG_COLOR_W           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_W'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:183:86: note: in expansion of macro 'LOG_FORMAT'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:99:31: error: format '%d' expects argument of type 'int', but argument 8 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+   99 | #define LOG_COLOR_W           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_W'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:183:86: note: in expansion of macro 'LOG_FORMAT'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:101:31: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  101 | #define LOG_COLOR_D           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_D'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:184:86: note: in expansion of macro 'LOG_FORMAT'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:101:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  101 | #define LOG_COLOR_D           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_D'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:184:86: note: in expansion of macro 'LOG_FORMAT'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:101:31: error: format '%d' expects argument of type 'int', but argument 8 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  101 | #define LOG_COLOR_D           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_D'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:184:86: note: in expansion of macro 'LOG_FORMAT'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:102:31: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  102 | #define LOG_COLOR_V           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_V'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:185:86: note: in expansion of macro 'LOG_FORMAT'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:102:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  102 | #define LOG_COLOR_V           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_V'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:185:86: note: in expansion of macro 'LOG_FORMAT'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:102:31: error: format '%d' expects argument of type 'int', but argument 8 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  102 | #define LOG_COLOR_V           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_V'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:185:86: note: in expansion of macro 'LOG_FORMAT'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:100:31: error: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  100 | #define LOG_COLOR_I           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_I'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:186:86: note: in expansion of macro 'LOG_FORMAT'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:100:31: error: format '%d' expects argument of type 'int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  100 | #define LOG_COLOR_I           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_I'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:186:86: note: in expansion of macro 'LOG_FORMAT'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log_color.h:100:31: error: format '%d' expects argument of type 'int', but argument 8 has type 'uint32_t' {aka 'long unsigned int'} [-Werror=format=]
+  100 | #define LOG_COLOR_I           ""
+      |                               ^~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:62:37: note: in expansion of macro 'LOG_COLOR_I'
+   62 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:186:86: note: in expansion of macro 'LOG_FORMAT'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+C:/esp/v5.4.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/P4/Turn_on_the_screen/main/main.c:487:9: note: in expansion of macro 'ESP_LOGI'
+  487 |         ESP_LOGI(TAG, "JPEG dekoodattu: %d tavua (%dx%d)",
+      |         ^~~~~~~~
+In file included from C:/P4/Turn_on_the_screen/main/main.c:13:
+C:/P4/Turn_on_the_screen/peripheral/bsp_display/include/bsp_display.h: At top level:
+C:/P4/Turn_on_the_screen/peripheral/bsp_display/include/bsp_display.h:33:13: warning: 'set_coor' declared 'static' but never defined [-Wunused-function]
+   33 | static void set_coor(uint16_t x, uint16_t y, bool press);
+      |             ^~~~~~~~
+cc1.exe: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

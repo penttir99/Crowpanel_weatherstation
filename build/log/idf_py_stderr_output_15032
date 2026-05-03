@@ -1,0 +1,41 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM7 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4ff00f5e: [0;33mpanic_abort[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x4ff09ca6: [0;33m__ubsan_include[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x4ff00003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4ff04e6c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400da5b4: [0;33mesp_startup_start_app_other_cores[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m115[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4ff00f5e: [0;33mpanic_abort[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x4ff09ca6: [0;33m__ubsan_include[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x4ff00003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4ff04e6c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400da5b4: [0;33mesp_startup_start_app_other_cores[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m115[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4ff00f5e: [0;33mpanic_abort[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x4ff09ca6: [0;33m__ubsan_include[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x4ff00003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\P4\\Turn_on_the_screen\\build\\Lesson07.elf', '-ex', 'target remote | "C:\\\\Users\\\\pentt\\\\.espressif\\\\python_env\\\\idf5.4_py3.13_env\\\\Scripts\\\\python.exe" -m esp_idf_panic_decoder --target esp32p4 "C:\\\\Users\\\\pentt\\\\AppData\\\\Local\\\\Temp\\\\tmpnltp_9o_"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'Traceback (most recent call last):\r\n  File "<frozen runpy>", line 198, in _run_module_as_main\r\n  File "<frozen runpy>", line 88, in _run_code\r\n  File "C:\\Users\\pentt\\.espressif\\python_env\\idf5.4_py3.13_env\\Lib\\site-packages\\esp_idf_panic_decoder\\__main__.py", line 4, in <module>\r\n    main()\r\n    ~~~~^^\r\n  File "C:\\Users\\pentt\\.espressif\\python_env\\idf5.4_py3.13_env\\Lib\\site-packages\\esp_idf_panic_decoder\\gdb_panic_server.py", line 276, in main\r\n    panic_info = PANIC_OUTPUT_PARSERS.get(args.target, PANIC_OUTPUT_PARSERS[\'default\'])(args.input_file.read())\r\n  File "C:\\Users\\pentt\\.espressif\\python_env\\idf5.4_py3.13_env\\Lib\\site-packages\\esp_idf_panic_decoder\\gdb_panic_server.py", line 130, in parse_idf_riscv_panic_output\r\n    raise ValueError("Couldn\'t parse panic handler output")\r\nRemote communication error.  Target disconnected: could not peek into pipe (error 109): The pipe has been ended.\r\nNo stack.\r\n'
+
+[0m
+[0m--- 0x4ff04e6c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400da5b4: [0;33mesp_startup_start_app_other_cores[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m115[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4ff00f5e: [0;33mpanic_abort[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x4ff09ca6: [0;33m__ubsan_include[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m

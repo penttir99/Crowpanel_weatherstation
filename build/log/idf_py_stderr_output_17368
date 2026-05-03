@@ -1,0 +1,49 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM7 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4ff00f5e: [0;33mpanic_abort[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x4ff09ca6: [0;33m__ubsan_include[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x4ff00003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4ff04e6c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400da5b8: [0;33mesp_startup_start_app_other_cores[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m115[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4ff00f5e: [0;33mpanic_abort[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x4ff09ca6: [0;33m__ubsan_include[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x4ff00003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4ff04e6c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400da5b8: [0;33mesp_startup_start_app_other_cores[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m115[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4ff00f5e: [0;33mpanic_abort[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x4ff09ca6: [0;33m__ubsan_include[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x4ff00003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4ff04e6c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400da5b8: [0;33mesp_startup_start_app_other_cores[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m115[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x4ff00f5e: [0;33mpanic_abort[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x4ff09ca6: [0;33m__ubsan_include[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_system/ubsan.c[0m[0m:[1;31m311[0m
+[0m--- 0x4ff00003: [0;33m_vector_table[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4ff04e6c: [0;33mcpu_utility_ll_reset_cpu[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/hal/esp32p4/include/hal/cpu_utility_ll.h[0m[0m:[1;31m23[0m
+[0m--- (inlined by) [0;33mesp_cpu_reset[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m49[0m
+[0m--- 0x400da5b8: [0;33mesp_startup_start_app_other_cores[0m[0m at [0;32mC:/esp/v5.4.4/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m115[0m
+[0m

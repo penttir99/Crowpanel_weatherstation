@@ -1,0 +1,1629 @@
+ESP-ROM:esp32p4-eco2-20240710
+BESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x31f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (25) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v1.3[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (32) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (153) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (275) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (289) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (297) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (298) boot: Disabling RNG early entropy source...[0m
+[0;32mI (310) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (310) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (310) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (311) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (316) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (320) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (324) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (329) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (333) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (338) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (342) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (347) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (351) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (529) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (529) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (529) esp_psram: Speed: 200MHz[0m
+[0;32mI (530) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (533) cpu_start: Multicore app[0m
+[0;32mI (1486) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1495) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1496) cpu_start: Pro cpu start user code[0m
+[0;32mI (1496) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1498) app_init: Application information:[0m
+[0;32mI (1502) app_init: Project name:     Lesson07[0m
+[0;32mI (1506) app_init: App version:      1[0m
+[0;32mI (1509) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1515) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1519) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1523) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1527) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1531) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1535) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1541) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1547) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1552) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1558) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1563) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1568) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1576) spi_flash: detected chip: generic[0m
+[0;32mI (1579) spi_flash: flash io: dio[0m
+[0;32mI (1582) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1586) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1594) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1600) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1607) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1616) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1625) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1631) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1638) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1638) main_task: Started on CPU0[0m
+[0;32mI (1648) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1658) main_task: Calling app_main()[0m
+[0;32mI (1658) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1708) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1708) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1708) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1708) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3238) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3238) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3238) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (3278) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3278) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (3278) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (3378) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (3378) transport: set_transport_state: 1[0m
+[0;32mI (3378) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (3438) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (3438) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (3438) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (3438) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[1;31mE (3438) H_SDIO_DRV: task still writing Rx data to queue![0m
+[1;31mE (3438) H_SDIO_DRV: Failed to push data to rx queue[0m
+[0;32mI (3468) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[0;32mI (3468) transport: Received INIT event from ESP32 peripheral[0m
+[0;32mI (3468) transport: EVENT: 12[0m
+[0;32mI (3468) transport: Identified slave [esp32c6][0m
+[0;32mI (3468) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (3478) transport: EVENT: 11[0m
+[0;32mI (3478) transport: capabilities: 0xd[0m
+[0;32mI (3478) transport: Features supported are:[0m
+[0;32mI (3488) transport: 	 * WLAN[0m
+[0;32mI (3488) transport: 	   - HCI over SDIO[0m
+[0;32mI (3488) transport: 	   - BLE only[0m
+[0;32mI (3498) transport: EVENT: 13[0m
+[0;32mI (3498) transport: ESP board type is : 13 [0m
+
+[0;32mI (3498) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (3508) H_API: Transport active[0m
+[0;32mI (3508) transport: Slave chip Id[12][0m
+[0;32mI (3518) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (3518) transport: transport_delayed_init[0m
+[0;32mI (3528) esp_cli: Registering command: crash[0m
+[0;32mI (3528) esp_cli: Registering command: reboot[0m
+[0;32mI (3528) esp_cli: Registering command: mem-dump[0m
+[0;32mI (3538) esp_cli: Registering command: task-dump[0m
+[0;32mI (3538) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (3548) esp_cli: Registering command: heap-trace[0m
+[0;32mI (3548) esp_cli: Registering command: sock-dump[0m
+[0;32mI (3548) esp_cli: Registering command: host-power-save[0m
+[0;32mI (3558) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (3558) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (3568) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (3568) H_SDIO_DRV: Write thread started[0m
+[1;31mE (3578) H_SDIO_DRV: sdio_write_task: 0: Failed to send data: 258 29 29[0m
+[1;31mE (3578) H_SDIO_DRV: sdio_write_task: 1: Failed to send data: 258 29 29[0m
+[1;31mE (3588) H_SDIO_DRV: Unrecoverable host sdio state[0m
+[0;32mI (3588) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04a3c
+Core1 Saved PC:0x4ff04b98
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (286) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (287) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (287) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (292) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (296) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (300) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (305) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (309) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (314) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (318) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (323) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (328) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (505) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (505) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (505) esp_psram: Speed: 200MHz[0m
+[0;32mI (506) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (509) cpu_start: Multicore app[0m
+[0;32mI (1462) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1471) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1472) cpu_start: Pro cpu start user code[0m
+[0;32mI (1472) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1474) app_init: Application information:[0m
+[0;32mI (1478) app_init: Project name:     Lesson07[0m
+[0;32mI (1482) app_init: App version:      1[0m
+[0;32mI (1485) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1491) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1495) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1499) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1503) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1507) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1517) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1523) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1528) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1534) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1539) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1544) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1552) spi_flash: detected chip: generic[0m
+[0;32mI (1555) spi_flash: flash io: dio[0m
+[0;32mI (1558) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1562) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1570) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1576) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1583) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1592) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1601) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1607) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1614) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1614) main_task: Started on CPU0[0m
+[0;32mI (1624) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1634) main_task: Calling app_main()[0m
+[0;32mI (1634) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1684) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1684) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1684) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1684) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3214) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3214) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3214) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (3254) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3254) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (3254) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (3354) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (3354) transport: set_transport_state: 1[0m
+[0;32mI (3354) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (3414) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (3414) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (3414) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (3414) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[1;31mE (3414) H_SDIO_DRV: task still writing Rx data to queue![0m
+[1;31mE (3414) H_SDIO_DRV: Failed to push data to rx queue[0m
+[0;32mI (3444) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[0;32mI (3444) transport: Received INIT event from ESP32 peripheral[0m
+[0;32mI (3444) transport: EVENT: 12[0m
+[0;32mI (3444) transport: Identified slave [esp32c6][0m
+[0;32mI (3444) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (3454) transport: EVENT: 11[0m
+[0;32mI (3454) transport: capabilities: 0xd[0m
+[0;32mI (3454) transport: Features supported are:[0m
+[0;32mI (3464) transport: 	 * WLAN[0m
+[0;32mI (3464) transport: 	   - HCI over SDIO[0m
+[0;32mI (3464) transport: 	   - BLE only[0m
+[0;32mI (3474) transport: EVENT: 13[0m
+[0;32mI (3474) transport: ESP board type is : 13 [0m
+
+[0;32mI (3474) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (3484) H_API: Transport active[0m
+[0;32mI (3484) transport: Slave chip Id[12][0m
+[0;32mI (3494) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (3494) transport: transport_delayed_init[0m
+[0;32mI (3504) esp_cli: Registering command: crash[0m
+[0;32mI (3504) esp_cli: Registering command: reboot[0m
+[0;32mI (3504) esp_cli: Registering command: mem-dump[0m
+[0;32mI (3514) esp_cli: Registering command: task-dump[0m
+[0;32mI (3514) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (3524) esp_cli: Registering command: heap-trace[0m
+[0;32mI (3524) esp_cli: Registering command: sock-dump[0m
+[0;32mI (3524) esp_cli: Registering command: host-power-save[0m
+[0;32mI (3534) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (3534) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (3544) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (3544) H_SDIO_DRV: Write thread started[0m
+[1;31mE (3554) H_SDIO_DRV: sdio_write_task: 0: Failed to send data: 258 29 29[0m
+[1;31mE (3554) H_SDIO_DRV: sdio_write_task: 1: Failed to send data: 258 29 29[0m
+[1;31mE (3564) H_SDIO_DRV: Unrecoverable host sdio state[0m
+[0;32mI (3564) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04a3c
+Core1 Saved PC:0x4ff04b98
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (286) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (287) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (287) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (292) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (296) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (300) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (305) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (309) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (314) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (318) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (323) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (328) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (505) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (506) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (506) esp_psram: Speed: 200MHz[0m
+[0;32mI (507) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (510) cpu_start: Multicore app[0m
+[0;32mI (1462) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1472) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1472) cpu_start: Pro cpu start user code[0m
+[0;32mI (1473) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1475) app_init: Application information:[0m
+[0;32mI (1478) app_init: Project name:     Lesson07[0m
+[0;32mI (1483) app_init: App version:      1[0m
+[0;32mI (1486) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1491) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1496) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1499) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1503) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1507) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1518) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1524) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1529) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1534) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1540) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1545) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1552) spi_flash: detected chip: generic[0m
+[0;32mI (1555) spi_flash: flash io: dio[0m
+[0;32mI (1558) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1563) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1571) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1576) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1584) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1592) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1607) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1615) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1615) main_task: Started on CPU0[0m
+[0;32mI (1625) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1635) main_task: Calling app_main()[0m
+[0;32mI (1635) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1685) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1685) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1685) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1685) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3215) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3215) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3215) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (3255) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3255) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (3255) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (3355) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (3355) transport: set_transport_state: 1[0m
+[0;32mI (3355) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (3415) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (3415) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (3415) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (3415) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[1;31mE (3415) H_SDIO_DRV: Failed to push data to rx queue[0m
+[0;32mI (3445) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[0;32mI (3445) transport: Received INIT event from ESP32 peripheral[0m
+[0;32mI (3445) transport: EVENT: 12[0m
+[0;32mI (3445) transport: Identified slave [esp32c6][0m
+[0;32mI (3445) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (3455) transport: EVENT: 11[0m
+[0;32mI (3455) transport: capabilities: 0xd[0m
+[0;32mI (3455) transport: Features supported are:[0m
+[0;32mI (3465) transport: 	 * WLAN[0m
+[0;32mI (3465) transport: 	   - HCI over SDIO[0m
+[0;32mI (3465) transport: 	   - BLE only[0m
+[0;32mI (3475) transport: EVENT: 13[0m
+[0;32mI (3475) transport: ESP board type is : 13 [0m
+
+[0;32mI (3475) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (3485) H_API: Transport active[0m
+[0;32mI (3485) transport: Slave chip Id[12][0m
+[0;32mI (3495) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (3495) transport: transport_delayed_init[0m
+[0;32mI (3505) esp_cli: Registering command: crash[0m
+[0;32mI (3505) esp_cli: Registering command: reboot[0m
+[0;32mI (3505) esp_cli: Registering command: mem-dump[0m
+[0;32mI (3515) esp_cli: Registering command: task-dump[0m
+[0;32mI (3515) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (3525) esp_cli: Registering command: heap-trace[0m
+[0;32mI (3525) esp_cli: Registering command: sock-dump[0m
+[0;32mI (3525) esp_cli: Registering command: host-power-save[0m
+[0;32mI (3535) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (3535) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (3545) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (3545) H_SDIO_DRV: Write thread started[0m
+[1;31mE (3555) H_SDIO_DRV: sdio_write_task: 0: Failed to send data: 258 29 29[0m
+[1;31mE (3555) H_SDIO_DRV: sdio_write_task: 1: Failed to send data: 258 29 29[0m
+[1;31mE (3565) H_SDIO_DRV: Unrecoverable host sdio state[0m
+[0;32mI (3565) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04a3c
+Core1 Saved PC:0x4ff04b98
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (286) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (287) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (287) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (292) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (296) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (300) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (305) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (309) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (314) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (318) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (323) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (328) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (505) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (506) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (506) esp_psram: Speed: 200MHz[0m
+[0;32mI (507) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (510) cpu_start: Multicore app[0m
+[0;32mI (1462) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1472) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1472) cpu_start: Pro cpu start user code[0m
+[0;32mI (1473) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1475) app_init: Application information:[0m
+[0;32mI (1478) app_init: Project name:     Lesson07[0m
+[0;32mI (1483) app_init: App version:      1[0m
+[0;32mI (1486) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1491) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1496) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1499) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1503) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1507) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1518) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1524) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1529) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1534) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1540) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1545) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1552) spi_flash: detected chip: generic[0m
+[0;32mI (1555) spi_flash: flash io: dio[0m
+[0;32mI (1558) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1563) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1571) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1576) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1584) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1592) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1607) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1615) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1615) main_task: Started on CPU0[0m
+[0;32mI (1625) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1635) main_task: Calling app_main()[0m
+[0;32mI (1635) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1685) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1685) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1685) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1685) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3215) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3215) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3215) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (3255) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3255) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (3255) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (3355) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (3355) transport: set_transport_state: 1[0m
+[0;32mI (3355) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (3415) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (3415) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (3415) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (3445) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[0;32mI (3445) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[1;31mE (3445) H_SDIO_DRV: Failed to push data to rx queue[0m
+[0;32mI (3445) transport: Received INIT event from ESP32 peripheral[0m
+[1;31mE (3445) H_SDIO_DRV: task still writing Rx data to queue![0m
+[0;32mI (3445) transport: EVENT: 12[0m
+[0;32mI (3455) transport: Identified slave [esp32c6][0m
+[0;32mI (3465) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (3465) transport: EVENT: 11[0m
+[0;32mI (3475) transport: capabilities: 0xd[0m
+[0;32mI (3475) transport: Features supported are:[0m
+[0;32mI (3475) transport: 	 * WLAN[0m
+[0;32mI (3485) transport: 	   - HCI over SDIO[0m
+[0;32mI (3485) transport: 	   - BLE only[0m
+[0;32mI (3485) transport: EVENT: 13[0m
+[0;32mI (3485) transport: ESP board type is : 13 [0m
+
+[0;32mI (3495) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (3495) H_API: Transport active[0m
+[0;32mI (3505) transport: Slave chip Id[12][0m
+[0;32mI (3505) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (3515) transport: transport_delayed_init[0m
+[0;32mI (3515) esp_cli: Registering command: crash[0m
+[0;32mI (3515) esp_cli: Registering command: reboot[0m
+[0;32mI (3525) esp_cli: Registering command: mem-dump[0m
+[0;32mI (3525) esp_cli: Registering command: task-dump[0m
+[0;32mI (3535) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (3535) esp_cli: Registering command: heap-trace[0m
+[0;32mI (3545) esp_cli: Registering command: sock-dump[0m
+[0;32mI (3545) esp_cli: Registering command: host-power-save[0m
+[0;32mI (3545) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (3555) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (3555) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (3565) H_SDIO_DRV: Write thread started[0m
+[1;31mE (3575) H_SDIO_DRV: sdio_write_task: 0: Failed to send data: 258 29 29[0m
+[1;31mE (3575) H_SDIO_DRV: sdio_write_task: 1: Failed to send data: 258 29 29[0m
+[1;31mE (3575) H_SDIO_DRV: Unrecoverable host sdio state[0m
+[0;32mI (3585) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04a3c
+Core1 Saved PC:0x4ff04b98
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (286) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (287) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (287) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (292) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (296) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (300) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (305) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (309) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (314) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (318) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (323) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (328) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (505) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (506) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (506) esp_psram: Speed: 200MHz[0m
+[0;32mI (507) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (510) cpu_start: Multicore app[0m
+[0;32mI (1462) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1472) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1472) cpu_start: Pro cpu start user code[0m
+[0;32mI (1473) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1475) app_init: Application information:[0m
+[0;32mI (1478) app_init: Project name:     Lesson07[0m
+[0;32mI (1483) app_init: App version:      1[0m
+[0;32mI (1486) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1491) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1496) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1499) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1503) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1507) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1518) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1524) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1529) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1534) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1540) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1545) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1552) spi_flash: detected chip: generic[0m
+[0;32mI (1555) spi_flash: flash io: dio[0m
+[0;32mI (1558) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1563) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1571) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1576) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1584) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1592) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1607) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1615) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1615) main_task: Started on CPU0[0m
+[0;32mI (1625) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1635) main_task: Calling app_main()[0m
+[0;32mI (1635) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1685) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1685) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1685) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1685) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3215) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3215) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3215) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (3255) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3255) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (3255) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (3355) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (3355) transport: set_transport_state: 1[0m
+[0;32mI (3355) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (3415) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (3415) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (3415) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (3415) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[1;31mE (3415) H_SDIO_DRV: task still writing Rx data to queue![0m
+[1;31mE (3415) H_SDIO_DRV: Failed to push data to rx queue[0m
+[0;32mI (3445) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[0;32mI (3445) transport: Received INIT event from ESP32 peripheral[0m
+[0;32mI (3445) transport: EVENT: 12[0m
+[0;32mI (3445) transport: Identified slave [esp32c6][0m
+[0;32mI (3445) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (3455) transport: EVENT: 11[0m
+[0;32mI (3455) transport: capabilities: 0xd[0m
+[0;32mI (3455) transport: Features supported are:[0m
+[0;32mI (3465) transport: 	 * WLAN[0m
+[0;32mI (3465) transport: 	   - HCI over SDIO[0m
+[0;32mI (3465) transport: 	   - BLE only[0m
+[0;32mI (3475) transport: EVENT: 13[0m
+[0;32mI (3475) transport: ESP board type is : 13 [0m
+
+[0;32mI (3475) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (3485) H_API: Transport active[0m
+[0;32mI (3485) transport: Slave chip Id[12][0m
+[0;32mI (3495) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (3495) transport: transport_delayed_init[0m
+[0;32mI (3505) esp_cli: Registering command: crash[0m
+[0;32mI (3505) esp_cli: Registering command: reboot[0m
+[0;32mI (3505) esp_cli: Registering command: mem-dump[0m
+[0;32mI (3515) esp_cli: Registering command: task-dump[0m
+[0;32mI (3515) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (3525) esp_cli: Registering command: heap-trace[0m
+[0;32mI (3525) esp_cli: Registering command: sock-dump[0m
+[0;32mI (3525) esp_cli: Registering command: host-power-save[0m
+[0;32mI (3535) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (3535) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (3545) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (3545) H_SDIO_DRV: Write thread started[0m
+[1;31mE (3555) H_SDIO_DRV: sdio_write_task: 0: Failed to send data: 258 29 29[0m
+[1;31mE (3555) H_SDIO_DRV: sdio_write_task: 1: Failed to send data: 258 29 29[0m
+[1;31mE (3565) H_SDIO_DRV: Unrecoverable host sdio state[0m
+[0;32mI (3565) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04a3c
+Core1 Saved PC:0x4ff04b98
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (286) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (287) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (287) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (292) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (296) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (300) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (305) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (309) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (314) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (318) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (323) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (328) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (505) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (505) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (506) esp_psram: Speed: 200MHz[0m
+[0;32mI (506) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (509) cpu_start: Multicore app[0m
+[0;32mI (1462) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1472) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1472) cpu_start: Pro cpu start user code[0m
+[0;32mI (1472) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1474) app_init: Application information:[0m
+[0;32mI (1478) app_init: Project name:     Lesson07[0m
+[0;32mI (1482) app_init: App version:      1[0m
+[0;32mI (1486) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1491) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1495) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1499) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1503) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1507) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1517) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1523) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1528) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1534) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1539) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1545) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1552) spi_flash: detected chip: generic[0m
+[0;32mI (1555) spi_flash: flash io: dio[0m
+[0;32mI (1558) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1562) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1571) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1576) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1584) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1592) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1607) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1614) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1614) main_task: Started on CPU0[0m
+[0;32mI (1624) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1634) main_task: Calling app_main()[0m
+[0;32mI (1634) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1684) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1684) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1684) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1684) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3214) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3214) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3214) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (3254) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3254) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (3254) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (3354) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (3354) transport: set_transport_state: 1[0m
+[0;32mI (3354) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (3414) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (3414) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (3414) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (3444) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[0;32mI (3444) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[1;31mE (3444) H_SDIO_DRV: Failed to push data to rx queue[0m
+[0;32mI (3444) transport: Received INIT event from ESP32 peripheral[0m
+[1;31mE (3444) H_SDIO_DRV: task still writing Rx data to queue![0m
+[0;32mI (3454) transport: EVENT: 12[0m
+[0;32mI (3454) transport: Identified slave [esp32c6][0m
+[0;32mI (3464) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (3464) transport: EVENT: 11[0m
+[0;32mI (3474) transport: capabilities: 0xd[0m
+[0;32mI (3474) transport: Features supported are:[0m
+[0;32mI (3474) transport: 	 * WLAN[0m
+[0;32mI (3484) transport: 	   - HCI over SDIO[0m
+[0;32mI (3484) transport: 	   - BLE only[0m
+[0;32mI (3484) transport: EVENT: 13[0m
+[0;32mI (3484) transport: ESP board type is : 13 [0m
+
+[0;32mI (3494) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (3494) H_API: Transport active[0m
+[0;32mI (3504) transport: Slave chip Id[12][0m
+[0;32mI (3504) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (3514) transport: transport_delayed_init[0m
+[0;32mI (3514) esp_cli: Registering command: crash[0m
+[0;32mI (3514) esp_cli: Registering command: reboot[0m
+[0;32mI (3524) esp_cli: Registering command: mem-dump[0m
+[0;32mI (3524) esp_cli: Registering command: task-dump[0m
+[0;32mI (3534) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (3534) esp_cli: Registering command: heap-trace[0m
+[0;32mI (3544) esp_cli: Registering command: sock-dump[0m
+[0;32mI (3544) esp_cli: Registering command: host-power-save[0m
+[0;32mI (3544) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (3554) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (3554) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (3564) H_SDIO_DRV: Write thread started[0m
+[1;31mE (3574) H_SDIO_DRV: sdio_write_task: 0: Failed to send data: 258 29 29[0m
+[1;31mE (3574) H_SDIO_DRV: sdio_write_task: 1: Failed to send data: 258 29 29[0m
+[1;31mE (3574) H_SDIO_DRV: Unrecoverable host sdio state[0m
+[0;32mI (3584) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04a3c
+Core1 Saved PC:0x4ff04b98
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (286) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (287) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (287) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (292) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (296) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (300) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (305) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (309) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (314) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (318) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (323) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (328) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (505) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (506) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (506) esp_psram: Speed: 200MHz[0m
+[0;32mI (507) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (510) cpu_start: Multicore app[0m
+[0;32mI (1462) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1472) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1472) cpu_start: Pro cpu start user code[0m
+[0;32mI (1473) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1475) app_init: Application information:[0m
+[0;32mI (1478) app_init: Project name:     Lesson07[0m
+[0;32mI (1483) app_init: App version:      1[0m
+[0;32mI (1486) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1491) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1496) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1499) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1503) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1507) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1518) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1524) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1529) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1534) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1540) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1545) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1552) spi_flash: detected chip: generic[0m
+[0;32mI (1555) spi_flash: flash io: dio[0m
+[0;32mI (1558) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1563) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1571) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1576) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1584) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1592) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1607) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1615) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1615) main_task: Started on CPU0[0m
+[0;32mI (1625) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1635) main_task: Calling app_main()[0m
+[0;32mI (1635) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1685) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1685) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1685) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1685) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3215) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3215) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3215) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (3255) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3255) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (3255) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (3355) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (3355) transport: set_transport_state: 1[0m
+[0;32mI (3355) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (3415) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (3415) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (3415) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (3445) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[0;32mI (3445) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[1;31mE (3445) H_SDIO_DRV: Failed to push data to rx queue[0m
+[0;32mI (3445) transport: Received INIT event from ESP32 peripheral[0m
+[1;31mE (3445) H_SDIO_DRV: task still writing Rx data to queue![0m
+[0;32mI (3455) transport: EVENT: 12[0m
+[0;32mI (3455) transport: Identified slave [esp32c6][0m
+[0;32mI (3465) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (3465) transport: EVENT: 11[0m
+[0;32mI (3475) transport: capabilities: 0xd[0m
+[0;32mI (3475) transport: Features supported are:[0m
+[0;32mI (3475) transport: 	 * WLAN[0m
+[0;32mI (3485) transport: 	   - HCI over SDIO[0m
+[0;32mI (3485) transport: 	   - BLE only[0m
+[0;32mI (3485) transport: EVENT: 13[0m
+[0;32mI (3485) transport: ESP board type is : 13 [0m
+
+[0;32mI (3495) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (3495) H_API: Transport active[0m
+[0;32mI (3505) transport: Slave chip Id[12][0m
+[0;32mI (3505) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (3515) transport: transport_delayed_init[0m
+[0;32mI (3515) esp_cli: Registering command: crash[0m
+[0;32mI (3515) esp_cli: Registering command: reboot[0m
+[0;32mI (3525) esp_cli: Registering command: mem-dump[0m
+[0;32mI (3525) esp_cli: Registering command: task-dump[0m
+[0;32mI (3535) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (3535) esp_cli: Registering command: heap-trace[0m
+[0;32mI (3545) esp_cli: Registering command: sock-dump[0m
+[0;32mI (3545) esp_cli: Registering command: host-power-save[0m
+[0;32mI (3545) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (3555) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (3555) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (3565) H_SDIO_DRV: Write thread started[0m
+[1;31mE (3575) H_SDIO_DRV: sdio_write_task: 0: Failed to send data: 258 29 29[0m
+[1;31mE (3575) H_SDIO_DRV: sdio_write_task: 1: Failed to send data: 258 29 29[0m
+[1;31mE (3575) H_SDIO_DRV: Unrecoverable host sdio state[0m
+[0;32mI (3585) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04a3c
+Core1 Saved PC:0x4ff04b98
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (286) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (287) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (287) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (292) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (296) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (300) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (305) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (309) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (314) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (318) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (323) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (328) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (505) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (506) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (506) esp_psram: Speed: 200MHz[0m
+[0;32mI (507) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (510) cpu_start: Multicore app[0m
+[0;32mI (1462) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1472) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1472) cpu_start: Pro cpu start user code[0m
+[0;32mI (1473) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1475) app_init: Application information:[0m
+[0;32mI (1478) app_init: Project name:     Lesson07[0m
+[0;32mI (1482) app_init: App version:      1[0m
+[0;32mI (1486) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1491) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1496) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1499) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1503) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1507) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1518) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1524) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1529) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1534) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1540) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1545) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1552) spi_flash: detected chip: generic[0m
+[0;32mI (1555) spi_flash: flash io: dio[0m
+[0;32mI (1558) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1563) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1571) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1576) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1584) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1592) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1607) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1614) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1614) main_task: Started on CPU0[0m
+[0;32mI (1624) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1634) main_task: Calling app_main()[0m
+[0;32mI (1634) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1684) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1684) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1684) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1684) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3214) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3214) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3214) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (3254) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3254) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (3254) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (3354) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (3354) transport: set_transport_state: 1[0m
+[0;32mI (3354) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (3414) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (3414) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (3414) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (3414) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[1;31mE (3414) H_SDIO_DRV: task still writing Rx data to queue![0m
+[1;31mE (3414) H_SDIO_DRV: Failed to push data to rx queue[0m
+[0;32mI (3444) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[0;32mI (3444) transport: Received INIT event from ESP32 peripheral[0m
+[0;32mI (3444) transport: EVENT: 12[0m
+[0;32mI (3444) transport: Identified slave [esp32c6][0m
+[0;32mI (3444) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (3454) transport: EVENT: 11[0m
+[0;32mI (3454) transport: capabilities: 0xd[0m
+[0;32mI (3454) transport: Features supported are:[0m
+[0;32mI (3464) transport: 	 * WLAN[0m
+[0;32mI (3464) transport: 	   - HCI over SDIO[0m
+[0;32mI (3464) transport: 	   - BLE only[0m
+[0;32mI (3474) transport: EVENT: 13[0m
+[0;32mI (3474) transport: ESP board type is : 13 [0m
+
+[0;32mI (3474) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (3484) H_API: Transport active[0m
+[0;32mI (3484) transport: Slave chip Id[12][0m
+[0;32mI (3494) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (3494) transport: transport_delayed_init[0m
+[0;32mI (3504) esp_cli: Registering command: crash[0m
+[0;32mI (3504) esp_cli: Registering command: reboot[0m
+[0;32mI (3504) esp_cli: Registering command: mem-dump[0m
+[0;32mI (3514) esp_cli: Registering command: task-dump[0m
+[0;32mI (3514) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (3524) esp_cli: Registering command: heap-trace[0m
+[0;32mI (3524) esp_cli: Registering command: sock-dump[0m
+[0;32mI (3524) esp_cli: Registering command: host-power-save[0m
+[0;32mI (3534) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (3534) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (3544) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (3544) H_SDIO_DRV: Write thread started[0m
+[1;31mE (3554) H_SDIO_DRV: sdio_write_task: 0: Failed to send data: 258 29 29[0m
+[1;31mE (3554) H_SDIO_DRV: sdio_write_task: 1: Failed to send data: 258 29 29[0m
+[1;31mE (3564) H_SDIO_DRV: Unrecoverable host sdio state[0m
+[0;32mI (3564) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04a3c
+Core1 Saved PC:0x4ff04b98
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (286) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (287) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (287) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (292) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (296) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (300) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (305) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (309) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (314) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (318) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (323) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (328) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (505) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (506) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (506) esp_psram: Speed: 200MHz[0m
+[0;32mI (507) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (510) cpu_start: Multicore app[0m
+[0;32mI (1462) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1472) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1472) cpu_start: Pro cpu start user code[0m
+[0;32mI (1473) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1475) app_init: Application information:[0m
+[0;32mI (1478) app_init: Project name:     Lesson07[0m
+[0;32mI (1483) app_init: App version:      1[0m
+[0;32mI (1486) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1491) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1496) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1499) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1503) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1507) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1518) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1524) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1529) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1534) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1540) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1545) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1552) spi_flash: detected chip: generic[0m
+[0;32mI (1555) spi_flash: flash io: dio[0m
+[0;32mI (1558) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1563) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1571) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1576) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1584) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1592) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1607) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1615) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1615) main_task: Started on CPU0[0m
+[0;32mI (1625) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1635) main_task: Calling app_main()[0m
+[0;32mI (1635) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1685) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1685) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1685) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1685) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3215) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3215) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3215) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (3255) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3255) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (3255) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (3355) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (3355) transport: set_transport_state: 1[0m
+[0;32mI (3355) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (3415) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (3415) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (3415) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (3415) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[1;31mE (3415) H_SDIO_DRV: task still writing Rx data to queue![0m
+[1;31mE (3415) H_SDIO_DRV: Failed to push data to rx queue[0m
+[0;32mI (3445) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[0;32mI (3445) transport: Received INIT event from ESP32 peripheral[0m
+[0;32mI (3445) transport: EVENT: 12[0m
+[0;32mI (3445) transport: Identified slave [esp32c6][0m
+[0;32mI (3445) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (3455) transport: EVENT: 11[0m
+[0;32mI (3455) transport: capabilities: 0xd[0m
+[0;32mI (3455) transport: Features supported are:[0m
+[0;32mI (3465) transport: 	 * WLAN[0m
+[0;32mI (3465) transport: 	   - HCI over SDIO[0m
+[0;32mI (3465) transport: 	   - BLE only[0m
+[0;32mI (3475) transport: EVENT: 13[0m
+[0;32mI (3475) transport: ESP board type is : 13 [0m
+
+[0;32mI (3475) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (3485) H_API: Transport active[0m
+[0;32mI (3485) transport: Slave chip Id[12][0m
+[0;32mI (3495) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (3495) transport: transport_delayed_init[0m
+[0;32mI (3505) esp_cli: Registering command: crash[0m
+[0;32mI (3505) esp_cli: Registering command: reboot[0m
+[0;32mI (3505) esp_cli: Registering command: mem-dump[0m
+[0;32mI (3515) esp_cli: Registering command: task-dump[0m
+[0;32mI (3515) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (3525) esp_cli: Registering command: heap-trace[0m
+[0;32mI (3525) esp_cli: Registering command: sock-dump[0m
+[0;32mI (3525) esp_cli: Registering command: host-power-save[0m
+[0;32mI (3535) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (3535) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (3545) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (3545) H_SDIO_DRV: Write thread started[0m
+[1;31mE (3555) H_SDIO_DRV: sdio_write_task: 0: Failed to send data: 258 29 29[0m
+[1;31mE (3555) H_SDIO_DRV: sdio_write_task: 1: Failed to send data: 258 29 29[0m
+[1;31mE (3565) H_SDIO_DRV: Unrecoverable host sdio state[0m
+[0;32mI (3565) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04a3c
+Core1 Saved PC:0x4ff04b98
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (286) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (287) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (287) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (292) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (296) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (300) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (305) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (309) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (314) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (318) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (323) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (328) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (505) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (505) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (505) esp_psram: Speed: 200MHz[0m
+[0;32mI (506) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (509) cpu_start: Multicore app[0m
+[0;32mI (1462) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1471) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1472) cpu_start: Pro cpu start user code[0m
+[0;32mI (1472) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1474) app_init: Application information:[0m
+[0;32mI (1478) app_init: Project name:     Lesson07[0m
+[0;32mI (1482) app_init: App version:      1[0m
+[0;32mI (1485) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1491) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1495) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1499) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1503) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1507) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1517) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1523) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1528) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1534) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1539) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1544) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1552) spi_flash: detected chip: generic[0m
+[0;32mI (1555) spi_flash: flash io: dio[0m
+[0;32mI (1558) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1562) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1570) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1576) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1583) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1592) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1601) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1607) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1614) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1614) main_task: Started on CPU0[0m
+[0;32mI (1624) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1634) main_task: Calling app_main()[0m
+[0;32mI (1634) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1684) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1684) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1684) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1684) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3214) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3214) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3214) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (3254) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3254) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (3254) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (3354) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (3354) transport: set_transport_state: 1[0m
+[0;32mI (3354) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (3414) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (3414) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (3414) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (3414) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[1;31mE (3414) H_SDIO_DRV: Failed to push data to rx queue[0m
+[0;32mI (3444) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[0;32mI (3444) transport: Received INIT event from ESP32 peripheral[0m
+[0;32mI (3444) transport: EVENT: 12[0m
+[0;32mI (3444) transport: Identified slave [esp32c6][0m
+[0;32mI (3444) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (3454) transport: EVENT: 11[0m
+[0;32mI (3454) transport: capabilities: 0xd[0m
+[0;32mI (3454) transport: Features supported are:[0m
+[0;32mI (3464) transport: 	 * WLAN[0m
+[0;32mI (3464) transport: 	   - HCI over SDIO[0m
+[0;32mI (3464) transport: 	   - BLE only[0m
+[0;32mI (3474) transport: EVENT: 13[0m
+[0;32mI (3474) transport: ESP board type is : 13 [0m
+
+[0;32mI (3474) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (3484) H_API: Transport active[0m
+[0;32mI (3484) transport: Slave chip Id[12][0m
+[0;32mI (3494) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (3494) transport: transport_delayed_init[0m
+[0;32mI (3504) esp_cli: Registering command: crash[0m
+[0;32mI (3504) esp_cli: Registering command: reboot[0m
+[0;32mI (3504) esp_cli: Registering command: mem-dump[0m
+[0;32mI (3514) esp_cli: Registering command: task-dump[0m
+[0;32mI (3514) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (3524) esp_cli: Registering command: heap-trace[0m
+[0;32mI (3524) esp_cli: Registering command: sock-dump[0m
+[0;32mI (3524) esp_cli: Registering command: host-power-save[0m
+[0;32mI (3534) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (3534) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (3544) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (3544) H_SDIO_DRV: Write thread started[0m
+[1;31mE (3554) H_SDIO_DRV: sdio_write_task: 0: Failed to send data: 258 29 29[0m
+[1;31mE (3554) H_SDIO_DRV: sdio_write_task: 1: Failed to send data: 258 29 29[0m
+[1;31mE (3564) H_SDIO_DRV: Unrecoverable host sdio state[0m
+[0;32mI (3564) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04a3c
+Core1 Saved PC:0x4ff04b98
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (286) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (287) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (287) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (292) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (296) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (300) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (305) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (309) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (314) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (318) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (323) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (328) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (505) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (505) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (506) esp_psram: Speed: 200MHz[0m
+[0;32mI (506) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (509) cpu_start: Multicore app[0m
+[0;32mI (1462) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1472) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1472) cpu_start: Pro cpu start user code[0m
+[0;32mI (1472) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1474) app_init: Application information:[0m
+[0;32mI (1478) app_init: Project name:     Lesson07[0m
+[0;32mI (1482) app_init: App version:      1[0m
+[0;32mI (1486) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1491) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1495) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1499) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1503) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1507) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1517) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1523) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1528) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1534) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1539) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1545) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1552) spi_flash: detected chip: generic[0m
+[0;32mI (1555) spi_flash: flash io: dio[0m
+[0;32mI (1558) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1562) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1571) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1576) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1584) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1592) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1607) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1614) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1614) main_task: Started on CPU0[0m
+[0;32mI (1624) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1634) main_task: Calling app_main()[0m
+[0;32mI (1634) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1684) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1684) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1684) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1684) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3214) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3214) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3214) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m
+[0;32mI (3254) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3254) sdio_wrapper: Function 0 Blocksize: 512[0m
+[0;32mI (3254) sdio_wrapper: Function 1 Blocksize: 512[0m
+[0;32mI (3354) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE[0m
+[0;32mI (3354) transport: set_transport_state: 1[0m
+[0;32mI (3354) transport: Waiting for esp_hosted slave to be ready[0m
+[0;32mI (3414) H_SDIO_DRV: SDIO Host operating in STREAMING MODE[0m
+[0;32mI (3414) H_SDIO_DRV: Open data path at slave[0m
+[0;32mI (3414) H_SDIO_DRV: Starting SDIO process rx task[0m
+[1;31mE (3414) H_SDIO_DRV: Dropping packet(s) from stream[0m
+[1;31mE (3414) H_SDIO_DRV: Failed to push data to rx queue[0m
+[0;32mI (3444) H_SDIO_DRV: Received ESP_PRIV_IF type message[0m
+[0;32mI (3444) transport: Received INIT event from ESP32 peripheral[0m
+[0;32mI (3444) transport: EVENT: 12[0m
+[0;32mI (3444) transport: Identified slave [esp32c6][0m
+[0;32mI (3444) transport: SDIO mode: slave: streaming, host: streaming[0m
+[0;32mI (3454) transport: EVENT: 11[0m
+[0;32mI (3454) transport: capabilities: 0xd[0m
+[0;32mI (3454) transport: Features supported are:[0m
+[0;32mI (3464) transport: 	 * WLAN[0m
+[0;32mI (3464) transport: 	   - HCI over SDIO[0m
+[0;32mI (3464) transport: 	   - BLE only[0m
+[0;32mI (3474) transport: EVENT: 13[0m
+[0;32mI (3474) transport: ESP board type is : 13 [0m
+
+[0;32mI (3474) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE[0m
+[0;32mI (3484) H_API: Transport active[0m
+[0;32mI (3484) transport: Slave chip Id[12][0m
+[0;32mI (3494) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80][0m
+[0;32mI (3494) transport: transport_delayed_init[0m
+[0;32mI (3504) esp_cli: Registering command: crash[0m
+[0;32mI (3504) esp_cli: Registering command: reboot[0m
+[0;32mI (3504) esp_cli: Registering command: mem-dump[0m
+[0;32mI (3514) esp_cli: Registering command: task-dump[0m
+[0;32mI (3514) esp_cli: Registering command: cpu-dump[0m
+[0;32mI (3524) esp_cli: Registering command: heap-trace[0m
+[0;32mI (3524) esp_cli: Registering command: sock-dump[0m
+[0;32mI (3524) esp_cli: Registering command: host-power-save[0m
+[0;32mI (3534) hci_stub_drv: Host BT Support: Disabled[0m
+[0;32mI (3534) H_SDIO_DRV: Received INIT event[0m
+[0;32mI (3544) H_SDIO_DRV: Event type: 0x22[0m
+[0;32mI (3544) H_SDIO_DRV: Write thread started[0m
+[1;31mE (3554) H_SDIO_DRV: sdio_write_task: 0: Failed to send data: 258 29 29[0m
+[1;31mE (3554) H_SDIO_DRV: sdio_write_task: 1: Failed to send data: 258 29 29[0m
+[1;31mE (3564) H_SDIO_DRV: Unrecoverable host sdio state[0m
+[0;32mI (3564) os_wrapper_esp: Restarting host[0m
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0xc (SW_CPU_RESET),boot:0x31f (SPI_FAST_FLASH_BOOT)
+Core0 Saved PC:0x4ff04a3c
+Core1 Saved PC:0x4ff04b98
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x1674
+load:0x4ff2abd0,len:0xe7c
+load:0x4ff2cbd0,len:0x3344
+entry 0x4ff2abda
+[0;32mI (33) boot: ESP-IDF v5.4.4 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Apr 26 2026 16:08:56[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.3[0m
+[0;32mI (36) boot: efuse block revision: v0.3[0m
+[0;32mI (40) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (44) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=400b0020 size=5cd44h (380228) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0006cd6c vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=0006cddc vaddr=4ff00000 size=0323ch ( 12860) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00070020 vaddr=40000020 size=a3ce4h (670948) map[0m
+[0;32mI (254) esp_image: segment 4: paddr=00113d0c vaddr=4ff0323c size=0f920h ( 63776) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=00123634 vaddr=4ff12b80 size=034d8h ( 13528) load[0m
+[0;32mI (273) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) hex_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (286) hex_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (287) hex_psram: DriveStr.    : 0x00 (25 Ohm)[0m
+[0;32mI (287) hex_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (292) hex_psram: density      : 0x07 (256 Mbit)[0m
+[0;32mI (296) hex_psram: good-die     : 0x06 (Pass)[0m
+[0;32mI (300) hex_psram: SRF          : 0x02 (Slow Refresh)[0m
+[0;32mI (305) hex_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (309) hex_psram: BurstLen     : 0x03 (2048 Byte)[0m
+[0;32mI (314) hex_psram: BitMode      : 0x01 (X16 Mode)[0m
+[0;32mI (318) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)[0m
+[0;32mI (323) hex_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (328) MSPI DQS: tuning success, best phase id is 0[0m
+[0;32mI (505) MSPI DQS: tuning success, best delayline id is 17[0m
+[0;32mI (506) esp_psram: Found 32MB PSRAM device[0m
+[0;32mI (506) esp_psram: Speed: 200MHz[0m
+[0;32mI (507) hex_psram: psram CS IO is dedicated[0m
+[0;32mI (510) cpu_start: Multicore app[0m
+[0;32mI (1462) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1472) cpu_start: GPIO 38 and 37 are used as console UART I/O pins[0m
+[0;32mI (1472) cpu_start: Pro cpu start user code[0m
+[0;32mI (1473) cpu_start: cpu freq: 360000000 Hz[0m
+[0;32mI (1475) app_init: Application information:[0m
+[0;32mI (1478) app_init: Project name:     Lesson07[0m
+[0;32mI (1483) app_init: App version:      1[0m
+[0;32mI (1486) app_init: Compile time:     Apr 27 2026 21:18:25[0m
+[0;32mI (1491) app_init: ELF file SHA256:  7a7852076...[0m
+[0;32mI (1496) app_init: ESP-IDF:          v5.4.4[0m
+[0;32mI (1499) efuse_init: Min chip rev:     v0.1[0m
+[0;32mI (1503) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (1507) efuse_init: Chip rev:         v1.3[0m
+[0;32mI (1511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1518) heap_init: At 4FF1B2A0 len 0001FD20 (127 KiB): RETENT_RAM[0m
+[0;32mI (1524) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM[0m
+[0;32mI (1529) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM[0m
+[0;32mI (1534) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM[0m
+[0;32mI (1540) heap_init: At 30100068 len 00001F98 (7 KiB): TCM[0m
+[0;32mI (1545) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator[0m
+[0;32mI (1552) spi_flash: detected chip: generic[0m
+[0;32mI (1555) spi_flash: flash io: dio[0m
+[0;32mI (1558) host_init: ESP Hosted : Host chip_ip[18][0m
+[0;32mI (1563) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120[0m
+[0;32mI (1571) H_API: ** add_esp_wifi_remote_channels **[0m
+[0;32mI (1576) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1584) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1592) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1607) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1615) H_SDIO_DRV: sdio_data_to_rx_buf_task started[0m
+[0;32mI (1615) main_task: Started on CPU0[0m
+[0;32mI (1625) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1635) main_task: Calling app_main()[0m
+[0;32mI (1635) SAASEMA: === Sääasema ESP32-P4 käynnistyy ===[0m
+[0;32mI (1685) transport: Attempt connection with slave: retry[0][0m
+[0;33mW (1685) H_SDIO_DRV: Reset slave using GPIO[54][0m
+[0;32mI (1685) os_wrapper_esp: GPIO [54] configured[0m
+[0;32mI (1685) gpio: GPIO[54]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (3215) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 1-bit Freq(KHz)[40000 KHz][0m
+[0;32mI (3215) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] Slave_Reset[54][0m
+[0;32mI (3215) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1][0m

@@ -1,0 +1,20 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32p4
+NOTICE: Processing 10 dependencies:
+NOTICE: [1/10] espressif/cmake_utilities (0.5.3)
+NOTICE: [2/10] espressif/eppp_link (1.1.5)
+NOTICE: [3/10] espressif/esp_hosted (2.12.6)
+NOTICE: [4/10] espressif/esp_lcd_ek79007 (1.0.4)
+NOTICE: [5/10] espressif/esp_lvgl_port (2.7.2)
+NOTICE: [6/10] espressif/esp_serial_slave_link (1.1.2)
+NOTICE: [7/10] espressif/esp_wifi_remote (1.5.1)
+NOTICE: [8/10] espressif/wifi_remote_over_eppp (0.3.2)
+NOTICE: [9/10] lvgl/lvgl (8.4.0)
+NOTICE: [10/10] idf (5.4.4)
+-- Using new driver components (IDF ÔëÑ 5.0)
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+C:\Users\pentt\.espressif\tools\cmake\3.30.2\bin\cmake.exe --regenerate-during-build -SC:\P4\Turn_on_the_screen -BC:\P4\Turn_on_the_screen\build
